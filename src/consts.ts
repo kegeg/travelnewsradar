@@ -8,3 +8,22 @@ export const AUTHOR = {
   url: '/author/kevin/',
   jobTitle: 'Editor',
 };
+
+/** Replace `#` when accounts are live. */
+export const SOCIAL_LINKS = [
+  {
+    id: 'x',
+    label: 'X (Twitter)',
+    href: '#',
+  },
+  {
+    id: 'instagram',
+    label: 'Instagram',
+    href: '#',
+  },
+  {
+    id: 'tiktok',
+    label: 'TikTok',
+    href: '#',
+  },
+] as const;

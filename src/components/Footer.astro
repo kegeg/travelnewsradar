@@ -1,17 +1,68 @@
 ---
-import { SITE_NAME } from '../consts';
+import { SITE_NAME, SOCIAL_LINKS } from '../consts';
+import SocialIcon from './SocialIcon.astro';
 ---
 
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <p class="site-footer__copy">
-      &copy; {new Date().getFullYear()}
-      {SITE_NAME}
-    </p>
-    <p class="site-footer__links">
-      <a href="/privacy/">Privacy Policy</a>
-      <span class="site-footer__sep" aria-hidden="true">·</span>
-      <a href="/terms/">Terms &amp; Conditions</a>
-    </p>
+    <div class="site-footer__top">
+      <form class="footer-signup" action="#" method="post" data-placeholder="true">
+        <label class="footer-signup__label" for="footer-email">
+          Get breaking travel news
+        </label>
+        <div class="footer-signup__row">
+          <input
+            id="footer-email"
+            class="footer-signup__input"
+            type="email"
+            name="email"
+            autocomplete="email"
+            placeholder="you@example.com"
+            required
+            disabled
+          />
+          <button class="footer-signup__btn" type="submit" disabled>
+            Subscribe
+          </button>
+        </div>
+        <p class="footer-signup__note">Email alerts coming soon.</p>
+      </form>
+
+      <div class="site-footer__social">
+        <p class="site-footer__social-label">Follow</p>
+        <ul class="social-list">
+          {
+            SOCIAL_LINKS.map((item) => (
+              <li>
+                <a
+                  class="social-link"
+                  href={item.href}
+                  aria-label={`${item.label} (link coming soon)`}
+                  title={`${item.label}: link coming soon`}
+                >
+                  <SocialIcon network={item.id} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom">
+      <nav class="site-footer__nav" aria-label="Footer">
+        <a href="/about/">About</a>
+        <span class="site-footer__sep" aria-hidden="true">·</span>
+        <a href="/contact/">Contact</a>
+        <span class="site-footer__sep" aria-hidden="true">·</span>
+        <a href="/privacy/">Privacy</a>
+        <span class="site-footer__sep" aria-hidden="true">·</span>
+        <a href="/terms/">Terms</a>
+      </nav>
+      <p class="site-footer__copy">
+        &copy; {new Date().getFullYear()}
+        {SITE_NAME}
+      </p>
+    </div>
   </div>
 </footer>

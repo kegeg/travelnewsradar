@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CONTACT_EMAIL, SITE_NAME } from '../consts';
+---
+
+<BaseLayout
+  title="Contact"
+  description={`Contact ${SITE_NAME}.`}
+>
+  <article class="article">
+    <h1>Contact</h1>
+    <div class="article__body">
+      <p>
+        For corrections, story tips, or general questions about {SITE_NAME},
+        email:
+      </p>
+      <p>
+        <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+      </p>
+      <p>
+        We read messages about factual errors first. Please include the article
+        URL and what you think is wrong.
+      </p>
+      <p>
+        For privacy-related requests, see our{' '}
+        <a href="/privacy/">Privacy Policy</a>. Legal terms are in{' '}
+        <a href="/terms/">Terms &amp; Conditions</a>.
+      </p>
+    </div>
+  </article>
+</BaseLayout>

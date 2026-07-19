@@ -24,10 +24,15 @@
 html {
   color-scheme: light;
   -webkit-text-size-adjust: 100%;
+  height: 100%;
 }
 
 body {
   margin: 0;
+  min-height: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   font-family: var(--font);
   font-size: 1.0625rem;
   line-height: 1.6;
@@ -106,6 +111,7 @@ li {
 }
 
 .site-header {
+  flex-shrink: 0;
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-rule);
 }
@@ -161,12 +167,16 @@ li {
 }
 
 .site-main {
+  flex: 1 0 auto;
+  width: 100%;
   max-width: var(--max-wide);
   margin: 0 auto;
   padding: 1.75rem var(--space) 3.5rem;
 }
 
 .site-footer {
+  flex-shrink: 0;
+  margin-top: auto;
   border-top: 1px solid var(--color-rule);
   background: var(--color-surface);
 }
@@ -174,22 +184,38 @@ li {
 .site-footer__inner {
   max-width: var(--max-wide);
   margin: 0 auto;
-  padding: 0.65rem var(--space);
+  padding: 1rem var(--space) 0.85rem;
   color: var(--color-muted);
   font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.site-footer__top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem 1.5rem;
+}
+
+.site-footer__bottom {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0.35rem 1rem;
+  gap: 0.5rem 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--color-rule);
 }
 
 .site-footer__copy,
-.site-footer__links {
+.site-footer__nav {
   margin: 0;
 }
 
-.site-footer__links {
+.site-footer__nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -209,6 +235,114 @@ li {
 .site-footer a:hover {
   color: var(--color-link);
   text-decoration: underline;
+}
+
+.footer-signup {
+  flex: 1 1 16rem;
+  max-width: 26rem;
+  margin: 0;
+}
+
+.footer-signup__label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  margin-bottom: 0.4rem;
+}
+
+.footer-signup__row {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.footer-signup__input {
+  flex: 1 1 auto;
+  min-width: 0;
+  border: 1px solid var(--color-rule);
+  border-radius: 0.4rem;
+  padding: 0.45rem 0.65rem;
+  font: inherit;
+  font-size: 0.9rem;
+  color: var(--color-ink);
+  background: var(--color-paper);
+}
+
+.footer-signup__input:disabled {
+  opacity: 0.75;
+  cursor: not-allowed;
+}
+
+.footer-signup__btn {
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 0.4rem;
+  padding: 0.45rem 0.8rem;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  background: var(--color-radar);
+  cursor: pointer;
+}
+
+.footer-signup__btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.footer-signup__note {
+  margin: 0.35rem 0 0;
+  font-size: 0.75rem;
+  color: var(--color-muted);
+}
+
+.site-footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.site-footer__social-label {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+}
+
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 0.4rem;
+}
+
+.social-list li {
+  margin: 0;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  border: 1px solid var(--color-rule);
+  color: var(--color-ink);
+  background: var(--color-paper);
+}
+
+.social-link:hover {
+  border-color: color-mix(in srgb, var(--color-ink) 25%, var(--color-rule));
+  color: var(--color-link);
+  text-decoration: none;
 }
 
 .radar-intro {

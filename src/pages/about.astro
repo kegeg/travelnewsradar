@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { AUTHOR, SITE_DESCRIPTION, SITE_NAME } from '../consts';
+---
+
+<BaseLayout
+  title="About"
+  description={`About ${SITE_NAME}: ${SITE_DESCRIPTION}`}
+>
+  <article class="article">
+    <h1>About {SITE_NAME}</h1>
+    <div class="article__body">
+      <p>
+        {SITE_NAME} spots breaking travel news as it enters range and turns it
+        into clear original articles for people who actually travel: what
+        happened, what it means, and what to do next.
+      </p>
+      <p>
+        We focus on short-supply news moments, not evergreen listicles. The goal
+        is to be useful in the first hours after a story breaks, when travelers
+        need a straight answer.
+      </p>
+      <h2>Editor</h2>
+      <p>
+        {SITE_NAME} is edited by{' '}
+        <a href={AUTHOR.url}>{AUTHOR.name}</a>, who is also co-founder of
+        Flytrippers.
+      </p>
+      <h2>Stay in range</h2>
+      <p>
+        Follow along on social (links coming soon) or check back on the{' '}
+        <a href="/">latest</a> stories. Email alerts are on the way.
+      </p>
+      <p>
+        Questions? See <a href="/contact/">Contact</a>.
+      </p>
+    </div>
+  </article>
+</BaseLayout>
