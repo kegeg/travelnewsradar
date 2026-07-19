@@ -1,0 +1,62 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_NAME } from '../consts';
+---
+
+<BaseLayout
+  title="Terms & Conditions"
+  description={`Terms and Conditions for ${SITE_NAME}.`}
+>
+  <article class="article">
+    <h1>Terms &amp; Conditions</h1>
+    <p class="article__meta" style="border: 0; padding: 0; margin-top: -0.25rem;">
+      Last updated: July 19th, 2026
+    </p>
+    <div class="article__body">
+      <p>
+        These Terms &amp; Conditions govern your use of {SITE_NAME} (the
+        “Site”). By using the Site, you agree to these terms.
+      </p>
+      <h2>Ownership</h2>
+      <p>
+        The Site is owned and operated by <strong>AK Ventures Inc.</strong>
+      </p>
+      <h2>Content</h2>
+      <p>
+        Articles on the Site are original editorial content intended for
+        general travel information. They are not legal, immigration, or
+        financial advice. Always verify details with official sources and your
+        carrier before you travel.
+      </p>
+      <h2>Corrections &amp; updates</h2>
+      <p>
+        News moves quickly. We may publish a new article when a story develops.
+        If you believe something on the Site is inaccurate, contact us through
+        channels listed when available and we will review it.
+      </p>
+      <h2>Affiliate links</h2>
+      <p>
+        Some pages may include links to related resources, including
+        Flytrippers. If we earn a commission from a link, we will disclose that
+        where required.
+      </p>
+      <h2>Limitation of liability</h2>
+      <p>
+        The Site is provided as-is. To the fullest extent permitted by law, AK
+        Ventures Inc. is not liable for decisions you make based on information
+        published here.
+      </p>
+      <h2>Changes</h2>
+      <p>
+        We may update these terms from time to time. The “Last updated” date at
+        the top of this page will change when we do.
+      </p>
+      <p>
+        <em
+          >This is an initial version for site launch and may be expanded as the
+          Site grows.</em
+        >
+      </p>
+    </div>
+  </article>
+</BaseLayout>

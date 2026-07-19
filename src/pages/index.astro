@@ -16,7 +16,11 @@ const [lead, ...rest] = articles;
   <h1 class="sr-only">{SITE_NAME} — latest travel news</h1>
 
   <div class="radar-intro">
-    <RadarMark size={22} class="radar-intro__mark" />
+    <RadarMark
+      size={22}
+      class="radar-intro__mark"
+      seedDate={lead?.data.pubDate}
+    />
     <div>
       <p class="hero-label">On the radar</p>
       <p class="radar-intro__sub">

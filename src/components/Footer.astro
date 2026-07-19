@@ -4,9 +4,10 @@ import { SITE_NAME } from '../consts';
 
 <footer class="site-footer">
   <div class="site-footer__inner">
-    <p>
-      &copy; {new Date().getFullYear()}
-      {SITE_NAME}
+    <p class="site-footer__line">
+      <span>&copy; {new Date().getFullYear()} {SITE_NAME}</span>
+      <span class="site-footer__sep" aria-hidden="true">·</span>
+      <a href="/terms/">Terms &amp; Conditions</a>
     </p>
   </div>
 </footer>

@@ -1,14 +1,26 @@
 ---
 /**
- * Radar mark: outer rings (lime) + contact/news blip (red).
- * Used as logo mark, favicon motif, and “on the radar” accents.
+ * Radar mark: lime rings + red contact blips.
+ * Pass `seedDate` (usually article pubDate) to place blips from time;
+ * omit for the stable brand mark (header).
  */
+import {
+  BRAND_RADAR_BLIPS,
+  radarBlipsFromDate,
+  type RadarBlip,
+} from '../utils/radarBlips';
+
 interface Props {
   class?: string;
   size?: number;
+  seedDate?: Date;
 }
 
-const { class: className = '', size = 28 } = Astro.props;
+const { class: className = '', size = 28, seedDate } = Astro.props;
+
+const blips: RadarBlip[] = seedDate
+  ? radarBlipsFromDate(seedDate)
+  : BRAND_RADAR_BLIPS;
 ---
 
 <svg
@@ -41,5 +53,15 @@ const { class: className = '', size = 28 } = Astro.props;
     r="3.75"
     stroke="var(--color-radar)"
     stroke-width="1.75"></circle>
-  <circle cx="16" cy="16" r="1.6" fill="var(--color-breaking)"></circle>
+  {
+    blips.map((b) => (
+      <circle
+        cx={b.cx}
+        cy={b.cy}
+        r={b.r}
+        fill="var(--color-breaking)"
+        opacity={b.opacity ?? 1}
+      />
+    ))
+  }
 </svg>
