@@ -4,7 +4,6 @@ export type RadarBlip = {
   cx: number;
   cy: number;
   r: number;
-  opacity?: number;
 };
 
 function blipAt(radius: number, degreesFromTop: number, size: number): RadarBlip {
@@ -17,32 +16,21 @@ function blipAt(radius: number, degreesFromTop: number, size: number): RadarBlip
   };
 }
 
+/** Brand / favicon / header: one contact at the center. */
+export const BRAND_RADAR_BLIPS: RadarBlip[] = [{ cx: 16, cy: 16, r: 1.6 }];
+
 /**
- * Map a publication datetime onto three contact blips:
- * - outer ring ← hour (+ minute drift)
- * - middle ring ← minute
- * - inner ring ← day of month
- * Sparse on purpose — reads as radar contacts, not noise.
+ * One contact blip from a publication datetime (for story-specific marks).
+ * Ring from hour; angle from minute + day — unique without looking like a target.
  */
 export function radarBlipsFromDate(date: Date): RadarBlip[] {
-  const hours = date.getHours() + date.getMinutes() / 60;
-  const minutes = date.getMinutes() + date.getSeconds() / 60;
+  const hours = date.getHours();
+  const minutes = date.getMinutes();
   const day = date.getDate();
 
-  const hourAngle = (hours / 12) * 360;
-  const minuteAngle = (minutes / 60) * 360;
-  const dayAngle = (day / 31) * 360;
+  const rings = [11, 7.5, 3.75] as const;
+  const ring = rings[hours % 3];
+  const angle = ((minutes * 6) + (day * 11.6)) % 360;
 
-  return [
-    blipAt(11, hourAngle, 1.35),
-    blipAt(7.5, minuteAngle, 1.5),
-    blipAt(3.75, dayAngle, 1.25),
-  ];
+  return [blipAt(ring, angle, 1.55)];
 }
-
-/** Stable brand mark for header / favicon (not time-varying). */
-export const BRAND_RADAR_BLIPS: RadarBlip[] = [
-  blipAt(11, 38, 1.3),
-  blipAt(7.5, 210, 1.45),
-  blipAt(3.75, 300, 1.2),
-];

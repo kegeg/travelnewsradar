@@ -84,7 +84,7 @@ const jsonLd = {
             src={article.data.image}
             alt={article.data.imageAlt ?? ''}
             width="1200"
-            height="675"
+            height="480"
             itemprop="image"
           />
         </div>
@@ -100,7 +100,7 @@ const jsonLd = {
     <h1 itemprop="headline">{article.data.title}</h1>
     <div class="article__meta">
       <span>
-        By
+        By{' '}
         <a href={AUTHOR.url} rel="author" itemprop="author">
           {article.data.author}
         </a>

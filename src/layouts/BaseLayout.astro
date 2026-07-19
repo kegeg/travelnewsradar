@@ -25,6 +25,8 @@ const {
 const documentTitle = title ?? SITE_NAME;
 const canonical =
   typeof canonicalURL === 'string' ? canonicalURL : canonicalURL.href;
+
+const GA_ID = 'G-JZV2D683SW';
 ---
 
 <!doctype html>
@@ -35,8 +37,8 @@ const canonical =
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
     <link rel="canonical" href={canonical} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
     <meta property="og:type" content={ogType} />
     <meta property="og:site_name" content={SITE_NAME} />
     <meta property="og:title" content={documentTitle} />
@@ -69,6 +71,16 @@ const canonical =
         },
       })}
     />
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+    ></script>
+    <script is:inline define:vars={{ GA_ID }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', GA_ID);
+    </script>
   </head>
   <body>
     <Header />

@@ -177,10 +177,19 @@ li {
   padding: 0.65rem var(--space);
   color: var(--color-muted);
   font-size: 0.85rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
 }
 
-.site-footer__line {
+.site-footer__copy,
+.site-footer__links {
   margin: 0;
+}
+
+.site-footer__links {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -285,7 +294,7 @@ li {
 
 .story__media {
   background: var(--color-ink);
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 2.5 / 1;
   overflow: hidden;
 }
 
@@ -341,12 +350,13 @@ li {
 
 @media (min-width: 860px) {
   .story--lead {
-    grid-template-columns: 1.35fr 1fr;
-    min-height: 20rem;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: stretch;
   }
 
   .story--lead .story__media {
     aspect-ratio: auto;
+    max-height: 280px;
     min-height: 100%;
   }
 
@@ -354,15 +364,15 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1.75rem 1.75rem 1.75rem 1.5rem;
+    padding: 1.5rem 1.75rem 1.5rem 1.5rem;
   }
 
   .story--lead .story__title {
-    font-size: clamp(1.55rem, 2.4vw, 2rem);
+    font-size: clamp(1.45rem, 2.2vw, 1.85rem);
   }
 
   .story--lead .story__dek {
-    font-size: 1.05rem;
+    font-size: 1.02rem;
     max-width: 34rem;
   }
 }
@@ -391,7 +401,7 @@ li {
   margin: -1.5rem -1.25rem 1.25rem;
   border-radius: var(--radius) var(--radius) 0 0;
   overflow: hidden;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 2.5 / 1;
   background: var(--color-ink);
 }
 

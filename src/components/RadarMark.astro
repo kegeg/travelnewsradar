@@ -1,8 +1,7 @@
 ---
 /**
- * Radar mark: lime rings + red contact blips.
- * Pass `seedDate` (usually article pubDate) to place blips from time;
- * omit for the stable brand mark (header).
+ * Radar mark: lime rings + one red contact blip.
+ * Default = centered brand mark. Pass `seedDate` to place the blip from pub time.
  */
 import {
   BRAND_RADAR_BLIPS,
@@ -55,13 +54,7 @@ const blips: RadarBlip[] = seedDate
     stroke-width="1.75"></circle>
   {
     blips.map((b) => (
-      <circle
-        cx={b.cx}
-        cy={b.cy}
-        r={b.r}
-        fill="var(--color-breaking)"
-        opacity={b.opacity ?? 1}
-      />
+      <circle cx={b.cx} cy={b.cy} r={b.r} fill="var(--color-breaking)" />
     ))
   }
 </svg>

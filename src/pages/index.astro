@@ -13,18 +13,14 @@ const [lead, ...rest] = articles;
 ---
 
 <BaseLayout description={SITE_DESCRIPTION}>
-  <h1 class="sr-only">{SITE_NAME} — latest travel news</h1>
+  <h1 class="sr-only">{SITE_NAME}: latest travel news</h1>
 
   <div class="radar-intro">
-    <RadarMark
-      size={22}
-      class="radar-intro__mark"
-      seedDate={lead?.data.pubDate}
-    />
+    <RadarMark size={22} class="radar-intro__mark" />
     <div>
       <p class="hero-label">On the radar</p>
       <p class="radar-intro__sub">
-        Breaking travel news as it enters range — what happened, what it means
+        Breaking travel news as it enters range: what happened, what it means
         for travelers.
       </p>
     </div>

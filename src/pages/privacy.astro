@@ -1,0 +1,120 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE_NAME } from '../consts';
+---
+
+<BaseLayout
+  title="Privacy Policy"
+  description={`Privacy Policy for ${SITE_NAME}.`}
+>
+  <article class="article">
+    <h1>Privacy Policy</h1>
+    <p class="article__meta" style="border: 0; padding: 0; margin-top: -0.25rem;">
+      Last updated: July 19th, 2026
+    </p>
+    <div class="article__body">
+      <p>
+        This Privacy Policy explains how {SITE_NAME} (“we”, “us”) collects and
+        uses information when you visit the Site.
+      </p>
+
+      <h2>Who we are</h2>
+      <p>
+        The Site is owned and operated by <strong>AK Ventures Inc.</strong>
+      </p>
+
+      <h2>Information we collect</h2>
+      <h3>Analytics</h3>
+      <p>
+        We use <strong>Google Analytics</strong> (Google LLC) to understand how
+        visitors use the Site. Google Analytics collects information such as
+        pages viewed, approximate location derived from IP address, device and
+        browser type, and referral source. Google may process this data on our
+        behalf under its own terms and privacy policy.
+      </p>
+      <p>
+        Our Google Analytics measurement ID is <code>G-JZV2D683SW</code>.
+      </p>
+      <p>
+        You can learn more about Google Analytics and how to opt out in
+        Google’s documentation, including the Google Analytics Opt-out Browser
+        Add-on where available.
+      </p>
+
+      <h3>Email</h3>
+      <p>
+        If you subscribe to email updates (when that feature is available), we
+        will collect the email address you provide and use it only to send those
+        updates, unless you consent to something else.
+      </p>
+
+      <h3>Server and security logs</h3>
+      <p>
+        Our hosting provider may automatically process technical logs (for
+        example IP address, timestamps, and request URLs) needed to operate and
+        secure the Site.
+      </p>
+
+      <h2>Cookies and similar technologies</h2>
+      <p>
+        Google Analytics may set cookies or use similar technologies to
+        distinguish visits and measure traffic. You can control cookies through
+        your browser settings.
+      </p>
+
+      <h2>How we use information</h2>
+      <ul>
+        <li>To measure and improve the Site</li>
+        <li>To understand which stories attract readers</li>
+        <li>To send email you asked for (when applicable)</li>
+        <li>To maintain security and troubleshoot issues</li>
+      </ul>
+
+      <h2>Sharing</h2>
+      <p>
+        We do not sell your personal information. We share data with service
+        providers who help us run the Site (including Google for Analytics and
+        our hosting provider), only as needed for those services.
+      </p>
+
+      <h2>Retention</h2>
+      <p>
+        Analytics data is retained according to our Google Analytics settings
+        and Google’s policies. Email subscription data is kept until you
+        unsubscribe or we close the list.
+      </p>
+
+      <h2>Your choices</h2>
+      <p>
+        You can block analytics cookies in your browser, use Google’s opt-out
+        tools where available, and unsubscribe from email using the link in any
+        message we send.
+      </p>
+
+      <h2>Children</h2>
+      <p>
+        The Site is not directed at children under 13, and we do not knowingly
+        collect personal information from them.
+      </p>
+
+      <h2>Changes</h2>
+      <p>
+        We may update this policy from time to time. The “Last updated” date at
+        the top will change when we do.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        For privacy questions, contact AK Ventures Inc. regarding {SITE_NAME}.
+        (A public contact method will be listed here when available.)
+      </p>
+
+      <p>
+        <em
+          >This is an initial policy for site launch and may be expanded as
+          features (such as email capture) go live.</em
+        >
+      </p>
+    </div>
+  </article>
+</BaseLayout>
