@@ -1,0 +1,98 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { AUTHOR, SITE_NAME, SITE_URL } from '../../consts';
+
+export async function getStaticPaths() {
+  const articles = await getCollection('articles', ({ data }) => !data.draft);
+  return articles.map((article) => ({
+    params: { slug: article.id },
+    props: { article },
+  }));
+}
+
+const { article } = Astro.props;
+const { Content } = await render(article);
+
+const published = article.data.pubDate;
+const modified = article.data.updatedDate ?? article.data.pubDate;
+const pageUrl = new URL(`/news/${article.id}/`, SITE_URL).href;
+
+function formatDateTime(date: Date) {
+  return date.toLocaleString('en-US', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+    timeZoneName: 'short',
+    timeZone: 'America/New_York',
+  });
+}
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'NewsArticle',
+  headline: article.data.title,
+  description: article.data.description,
+  datePublished: published.toISOString(),
+  dateModified: modified.toISOString(),
+  isAccessibleForFree: true,
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': pageUrl,
+  },
+  author: {
+    '@type': 'Person',
+    name: article.data.author,
+    url: new URL(AUTHOR.url, SITE_URL).href,
+    jobTitle: AUTHOR.jobTitle,
+  },
+  publisher: {
+    '@type': 'NewsMediaOrganization',
+    name: SITE_NAME,
+    logo: {
+      '@type': 'ImageObject',
+      url: `${SITE_URL}/logo-600x60.svg`,
+      width: 600,
+      height: 60,
+    },
+  },
+};
+---
+
+<BaseLayout
+  title={article.data.title}
+  description={article.data.description}
+  ogType="article"
+  jsonLd={jsonLd}
+>
+  <a class="back-link" href="/">&larr; Latest</a>
+  <article class="article" itemscope itemtype="https://schema.org/NewsArticle">
+    {
+      article.data.breaking && (
+        <p class="story__meta" style="margin-bottom: 0.75rem;">
+          <span class="badge-breaking">Breaking</span>
+        </p>
+      )
+    }
+    <h1 itemprop="headline">{article.data.title}</h1>
+    <div class="article__meta">
+      <span>
+        By
+        <a href={AUTHOR.url} rel="author" itemprop="author">
+          {article.data.author}
+        </a>
+      </span>
+      <time
+        datetime={published.toISOString()}
+        itemprop="datePublished"
+      >
+        {formatDateTime(published)}
+      </time>
+    </div>
+    <div class="article__body" itemprop="articleBody">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>

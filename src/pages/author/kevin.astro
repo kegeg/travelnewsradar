@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { AUTHOR, SITE_NAME, SITE_URL } from '../../consts';
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: AUTHOR.name,
+  url: new URL(AUTHOR.url, SITE_URL).href,
+  jobTitle: AUTHOR.jobTitle,
+  worksFor: {
+    '@type': 'NewsMediaOrganization',
+    name: SITE_NAME,
+  },
+  sameAs: [
+    'https://instagram.com/kevin.flytrippers/',
+    'https://www.linkedin.com/in/kevin-gagnon-2647a448/',
+  ],
+};
+---
+
+<BaseLayout
+  title={`${AUTHOR.name}, Editor`}
+  description={`${AUTHOR.name} is the editor of ${SITE_NAME} and co-founder of Flytrippers.`}
+  jsonLd={jsonLd}
+>
+  <article class="article">
+    <h1>{AUTHOR.name}</h1>
+    <p class="article__meta" style="border: 0; padding: 0; margin-top: -0.25rem;">
+      Editor, {SITE_NAME}
+    </p>
+    <div class="article__body">
+      <p>
+        <strong>{AUTHOR.name} is the co-founder of Flytrippers</strong>, where he
+        leads the technology behind the website and the systems used to spot
+        flight deals. At {SITE_NAME}, he is the editor responsible for the news
+        coverage travelers see here.
+      </p>
+      <p>
+        In 2018, Kevin sold all his possessions and became a full-time digital
+        nomad. Since then, he has traveled full-time, lived on 6 continents, and
+        explored countries across the world.
+      </p>
+      <p>
+        Kevin has also established a second residency and manages personal and
+        business banking across 3 countries. This first-hand experience shapes
+        his writing about visas, border crossings, banking abroad, and the
+        logistics of long-term international travel.
+      </p>
+      <p>
+        He specializes in advanced travel rewards strategies, particularly
+        accessing and maximizing US credit cards as a non-American. His goal is
+        to explain how these strategies work, where the real value is, and how
+        travelers can use them responsibly.
+      </p>
+      <p>
+        Kevin’s travel expertise has also been featured in Canadian media,
+        including CBC’s <em>Dragons’ Den</em> with co-founder Andrew D’Amours.
+        He trained as a structural engineer at Université Laval and was a member
+        of the Ordre des ingénieurs du Québec for over a decade.
+      </p>
+      <p>
+        Originally from Québec, Kevin writes to help readers travel more
+        independently, navigate the practical side of international travel, and
+        understand breaking travel news when it affects real trips.
+      </p>
+      <p>
+        <a href="https://instagram.com/kevin.flytrippers/">Instagram</a>
+        ·
+        <a href="https://www.linkedin.com/in/kevin-gagnon-2647a448/">LinkedIn</a>
+      </p>
+    </div>
+  </article>
+</BaseLayout>
