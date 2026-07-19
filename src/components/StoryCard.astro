@@ -3,11 +3,13 @@ import type { CollectionEntry } from 'astro:content';
 
 interface Props {
   article: CollectionEntry<'articles'>;
-  lead?: boolean;
+  variant?: 'lead' | 'card';
 }
 
-const { article, lead = false } = Astro.props;
+const { article, variant = 'card' } = Astro.props;
 const href = `/news/${article.id}/`;
+const image = article.data.image;
+const imageAlt = article.data.imageAlt ?? '';
 
 function formatDate(date: Date) {
   return date.toLocaleDateString('en-US', {
@@ -19,19 +21,35 @@ function formatDate(date: Date) {
 }
 ---
 
-<li>
-  <a class:list={['story', lead && 'story--lead']} href={href}>
-    <div class="story__meta">
-      {
-        article.data.breaking && (
-          <span class="badge-breaking">Breaking</span>
-        )
-      }
-      <time datetime={article.data.pubDate.toISOString()}>
-        {formatDate(article.data.pubDate)}
-      </time>
+<li class:list={['story-item', `story-item--${variant}`]}>
+  <a class:list={['story', `story--${variant}`]} href={href}>
+    {
+      image && (
+        <div class="story__media">
+          <img
+            src={image}
+            alt={imageAlt}
+            width={1200}
+            height={675}
+            loading={variant === 'lead' ? 'eager' : 'lazy'}
+            decoding="async"
+          />
+        </div>
+      )
+    }
+    <div class="story__body">
+      <div class="story__meta">
+        {
+          article.data.breaking && (
+            <span class="badge-breaking">Breaking</span>
+          )
+        }
+        <time datetime={article.data.pubDate.toISOString()}>
+          {formatDate(article.data.pubDate)}
+        </time>
+      </div>
+      <h2 class="story__title">{article.data.title}</h2>
+      <p class="story__dek">{article.data.description}</p>
     </div>
-    <h2 class="story__title">{article.data.title}</h2>
-    <p class="story__dek">{article.data.description}</p>
   </a>
 </li>

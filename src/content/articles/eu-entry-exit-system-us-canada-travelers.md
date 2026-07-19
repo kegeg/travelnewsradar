@@ -2,6 +2,8 @@
 title: "EU Entry/Exit System rollout: what US and Canadian visitors should expect"
 description: "Europe’s Entry/Exit System is rolling out at more borders. Here’s how it changes airport arrival time and what travelers should prepare."
 pubDate: 2026-07-17T09:15:00-04:00
+image: "/images/articles/eu-ees.svg"
+imageAlt: "Radar graphic for Europe border entry coverage"
 ---
 
 Europe’s Entry/Exit System (EES) is expanding across more external border points, replacing many passport stamps with biometric registration for non-EU visitors. For US and Canadian passport holders, the practical change is time and process at first entry — not a new visa requirement by itself.

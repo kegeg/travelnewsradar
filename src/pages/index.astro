@@ -2,32 +2,48 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import StoryCard from '../components/StoryCard.astro';
+import RadarMark from '../components/RadarMark.astro';
 import { SITE_DESCRIPTION, SITE_NAME } from '../consts';
 
-const articles = (await getCollection('articles', ({ data }) => !data.draft)).sort(
-  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+const articles = (
+  await getCollection('articles', ({ data }) => !data.draft)
+).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const [lead, ...rest] = articles;
 ---
 
 <BaseLayout description={SITE_DESCRIPTION}>
   <h1 class="sr-only">{SITE_NAME} — latest travel news</h1>
-  <p class="hero-label">
-    <span class="hero-label__pip" aria-hidden="true"></span>
-    Latest
-  </p>
+
+  <div class="radar-intro">
+    <RadarMark size={22} class="radar-intro__mark" />
+    <div>
+      <p class="hero-label">On the radar</p>
+      <p class="radar-intro__sub">
+        Breaking travel news as it enters range — what happened, what it means
+        for travelers.
+      </p>
+    </div>
+  </div>
 
   {
     articles.length === 0 ? (
       <p>No articles yet.</p>
     ) : (
-      <ol class="story-list">
-        {lead && <StoryCard article={lead} lead />}
-        {rest.map((article) => (
-          <StoryCard article={article} />
-        ))}
-      </ol>
+      <div class="home-feed">
+        {lead && (
+          <ol class="story-list story-list--lead">
+            <StoryCard article={lead} variant="lead" />
+          </ol>
+        )}
+        {rest.length > 0 && (
+          <ol class="story-list story-list--grid">
+            {rest.map((article) => (
+              <StoryCard article={article} variant="card" />
+            ))}
+          </ol>
+        )}
+      </div>
     )
   }
 </BaseLayout>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1220"/>
+      <stop offset="55%" stop-color="#163057"/>
+      <stop offset="100%" stop-color="#1f4b7a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <circle cx="900" cy="220" r="160" fill="none" stroke="#A8F000" stroke-width="3" opacity="0.25"/>
+  <circle cx="900" cy="220" r="105" fill="none" stroke="#A8F000" stroke-width="3" opacity="0.45"/>
+  <circle cx="900" cy="220" r="50" fill="none" stroke="#A8F000" stroke-width="3"/>
+  <circle cx="900" cy="220" r="12" fill="#E10600"/>
+  <path d="M80 520c120-40 240-90 360-70s260 90 400 70 240-110 360-90" fill="none" stroke="#F7F8FA" stroke-width="3" opacity="0.2"/>
+  <text x="72" y="590" fill="#F7F8FA" font-family="system-ui,sans-serif" font-size="42" font-weight="700" opacity="0.9">Air travel</text>
+</svg>

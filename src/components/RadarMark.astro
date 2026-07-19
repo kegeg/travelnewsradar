@@ -1,0 +1,45 @@
+---
+/**
+ * Radar mark: outer rings (lime) + contact/news blip (red).
+ * Used as logo mark, favicon motif, and “on the radar” accents.
+ */
+interface Props {
+  class?: string;
+  size?: number;
+}
+
+const { class: className = '', size = 28 } = Astro.props;
+---
+
+<svg
+  class={className}
+  width={size}
+  height={size}
+  viewBox="0 0 32 32"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+  aria-hidden="true"
+  focusable="false"
+>
+  <circle cx="16" cy="16" r="15" fill="var(--color-ink)"></circle>
+  <circle
+    cx="16"
+    cy="16"
+    r="11"
+    stroke="var(--color-radar)"
+    stroke-width="1.75"
+    opacity="0.35"></circle>
+  <circle
+    cx="16"
+    cy="16"
+    r="7.5"
+    stroke="var(--color-radar)"
+    stroke-width="1.75"></circle>
+  <circle
+    cx="16"
+    cy="16"
+    r="3.75"
+    stroke="var(--color-radar)"
+    stroke-width="1.75"></circle>
+  <circle cx="16" cy="16" r="1.6" fill="var(--color-breaking)"></circle>
+</svg>

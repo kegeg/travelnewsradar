@@ -17,6 +17,9 @@ const { Content } = await render(article);
 const published = article.data.pubDate;
 const modified = article.data.updatedDate ?? article.data.pubDate;
 const pageUrl = new URL(`/news/${article.id}/`, SITE_URL).href;
+const imageUrl = article.data.image
+  ? new URL(article.data.image, SITE_URL).href
+  : undefined;
 
 function formatDateTime(date: Date) {
   return date.toLocaleString('en-US', {
@@ -58,6 +61,11 @@ const jsonLd = {
       height: 60,
     },
   },
+  ...(imageUrl
+    ? {
+        image: [imageUrl],
+      }
+    : {}),
 };
 ---
 
@@ -69,6 +77,19 @@ const jsonLd = {
 >
   <a class="back-link" href="/">&larr; Latest</a>
   <article class="article" itemscope itemtype="https://schema.org/NewsArticle">
+    {
+      article.data.image && (
+        <div class="article__hero">
+          <img
+            src={article.data.image}
+            alt={article.data.imageAlt ?? ''}
+            width="1200"
+            height="675"
+            itemprop="image"
+          />
+        </div>
+      )
+    }
     {
       article.data.breaking && (
         <p class="story__meta" style="margin-bottom: 0.75rem;">
@@ -84,10 +105,7 @@ const jsonLd = {
           {article.data.author}
         </a>
       </span>
-      <time
-        datetime={published.toISOString()}
-        itemprop="datePublished"
-      >
+      <time datetime={published.toISOString()} itemprop="datePublished">
         {formatDateTime(published)}
       </time>
     </div>

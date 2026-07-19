@@ -3,6 +3,8 @@ title: "What an Air Canada pilots’ strike vote means for summer trips"
 description: "Air Canada pilots authorized a strike. Here’s what it means if you’re flying in or out of Canada this summer — and what to do now."
 pubDate: 2026-07-18T14:30:00-04:00
 breaking: true
+image: "/images/articles/air-canada-strike.svg"
+imageAlt: "Radar graphic for air travel disruption coverage"
 ---
 
 Air Canada pilots have authorized strike action, raising the odds of disrupted flights for travelers using Canada’s largest airline this summer. If you hold tickets in the coming weeks, treat this as a planning problem, not a rumor to ignore.

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-label="">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a1510"/>
+      <stop offset="45%" stop-color="#5a2a18"/>
+      <stop offset="100%" stop-color="#0B1220"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#g)"/>
+  <circle cx="980" cy="420" r="170" fill="none" stroke="#A8F000" stroke-width="3" opacity="0.22"/>
+  <circle cx="980" cy="420" r="110" fill="none" stroke="#A8F000" stroke-width="3" opacity="0.4"/>
+  <circle cx="980" cy="420" r="52" fill="none" stroke="#A8F000" stroke-width="3"/>
+  <circle cx="980" cy="420" r="12" fill="#E10600"/>
+  <path d="M120 200h280v40H120zm0 70h220v40H120zm0 70h300v40H120z" fill="#F7F8FA" opacity="0.12"/>
+  <text x="72" y="590" fill="#F7F8FA" font-family="system-ui,sans-serif" font-size="42" font-weight="700" opacity="0.9">Airport security</text>
+</svg>

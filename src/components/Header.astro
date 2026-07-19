@@ -1,12 +1,15 @@
 ---
+import RadarMark from './RadarMark.astro';
 ---
 
 <header class="site-header">
   <div class="site-header__inner">
-    <a class="wordmark" href="/">TravelNews<span>Radar</span></a>
+    <a class="brand" href="/" aria-label="TravelNewsRadar home">
+      <RadarMark size={32} class="brand__mark" />
+      <span class="wordmark">TravelNews<span>Radar</span></span>
+    </a>
     <nav class="site-nav" aria-label="Primary">
       <a href="/">Latest</a>
-      <a href="/author/kevin/">Editor</a>
     </nav>
   </div>
 </header>

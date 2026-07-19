@@ -12,6 +12,8 @@ const articles = defineCollection({
     author: z.string().default('Kevin Gagnon'),
     breaking: z.boolean().default(false),
     draft: z.boolean().default(false),
+    image: z.string().optional(),
+    imageAlt: z.string().optional(),
   }),
 });
 

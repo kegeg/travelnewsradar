@@ -2,6 +2,8 @@
 title: "TSA ID rules tighten: what still works at US airport security"
 description: "TSA is enforcing stricter ID standards at US airport checkpoints. Here’s what still works for domestic flyers and how to avoid a day-of surprise."
 pubDate: 2026-07-16T16:45:00-04:00
+image: "/images/articles/tsa-id.svg"
+imageAlt: "Radar graphic for US airport security coverage"
 ---
 
 The TSA is tightening which forms of identification clear US airport security without extra screening friction. Most travelers with a current REAL ID–compliant driver’s license or a valid passport will notice little change. People still carrying older non-compliant licenses are the group that needs a plan.
