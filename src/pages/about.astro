@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import SocialIcon from '../components/SocialIcon.astro';
 import {
   AUTHOR,
+  CONTACT_EMAIL,
   SITE_NAME,
   SITE_URL,
   SOCIAL_LINKS,
@@ -68,6 +69,28 @@ const jsonLd = {
         <a href={AUTHOR.url}>{AUTHOR.name}</a>. He has been living on the road
         since 2018 and has visited {AUTHOR.countriesVisited} countries so far.
         More background is on his <a href={AUTHOR.url}>author page</a>.
+      </p>
+
+      <h2 id="who-runs-travelnewsradar">Who runs {SITE_NAME}</h2>
+      <p>
+        {SITE_NAME} is owned and operated by AK Ventures Inc.
+      </p>
+
+      <h2 id="editorial-standards-corrections">
+        Editorial standards &amp; corrections
+      </h2>
+      <p>
+        Every article is researched and edited by a human. We link to primary
+        sources, official statements, government advisories, airline notices, so
+        you can verify claims yourself. When facts are contested (as breaking
+        news often is), we say so and give our opinion on it.
+      </p>
+      <p>
+        When we get something wrong, we fix the article and add a dated
+        correction note at the bottom. To report an error, email{' '}
+        <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a> with the article
+        URL and what you believe is wrong. Corrections are our top-priority
+        inbox.
       </p>
 
       <h2>Follow the news</h2>
