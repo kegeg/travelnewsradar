@@ -1,13 +1,16 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import StoryCard from '../../components/StoryCard.astro';
 import {
   AUTHOR,
   calendarDayInSiteTz,
+  PUBLISHER_LOGO,
   SITE_NAME,
   SITE_TZ,
   SITE_URL,
 } from '../../consts';
+import { absUrl, schemaImageObjects } from '../../utils/images';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles', ({ data }) => !data.draft);
@@ -24,9 +27,19 @@ const published = article.data.pubDate;
 const modified = article.data.updatedDate ?? article.data.pubDate;
 const breakingDay = calendarDayInSiteTz(published);
 const pageUrl = new URL(`/news/${article.id}/`, SITE_URL).href;
-const imageUrl = article.data.image
-  ? new URL(article.data.image, SITE_URL).href
+const ogImage = article.data.image
+  ? absUrl(article.data.image)
   : undefined;
+const imageObjects = schemaImageObjects(
+  article.data.image,
+  article.data.imageAlt,
+);
+
+const related = (
+  await getCollection('articles', ({ data, id }) => !data.draft && id !== article.id)
+)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
 
 function formatDateTime(date: Date) {
   return date.toLocaleString('en-US', {
@@ -36,7 +49,7 @@ function formatDateTime(date: Date) {
     hour: 'numeric',
     minute: '2-digit',
     timeZoneName: 'short',
-    timeZone: 'America/New_York',
+    timeZone: SITE_TZ,
   });
 }
 
@@ -57,22 +70,20 @@ const jsonLd = {
     name: article.data.author,
     url: new URL(AUTHOR.url, SITE_URL).href,
     jobTitle: AUTHOR.jobTitle,
+    sameAs: AUTHOR.sameAs,
   },
   publisher: {
     '@type': 'NewsMediaOrganization',
     name: SITE_NAME,
+    url: SITE_URL,
     logo: {
       '@type': 'ImageObject',
-      url: `${SITE_URL}/logo-600x60.svg`,
+      url: PUBLISHER_LOGO,
       width: 600,
       height: 60,
     },
   },
-  ...(imageUrl
-    ? {
-        image: [imageUrl],
-      }
-    : {}),
+  ...(imageObjects ? { image: imageObjects } : {}),
 };
 ---
 
@@ -80,6 +91,9 @@ const jsonLd = {
   title={article.data.title}
   description={article.data.description}
   ogType="article"
+  ogImage={ogImage}
+  ogImageWidth={1600}
+  ogImageHeight={900}
   jsonLd={jsonLd}
 >
   <a class="back-link" href="/">&larr; Latest</a>
@@ -90,8 +104,8 @@ const jsonLd = {
           <img
             src={article.data.image}
             alt={article.data.imageAlt ?? ''}
-            width="1200"
-            height="480"
+            width="1600"
+            height="900"
             itemprop="image"
           />
         </div>
@@ -127,4 +141,17 @@ const jsonLd = {
       <Content />
     </div>
   </article>
+
+  {
+    related.length > 0 && (
+      <section class="related-news" aria-labelledby="related-heading">
+        <h2 id="related-heading">More on the radar</h2>
+        <ol class="story-list story-list--grid">
+          {related.map((item) => (
+            <StoryCard article={item} variant="card" />
+          ))}
+        </ol>
+      </section>
+    )
+  }
 </BaseLayout>

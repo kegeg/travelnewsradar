@@ -589,3 +589,16 @@ li {
 .back-link:hover {
   color: var(--color-link);
 }
+
+.related-news {
+  max-width: var(--max-wide);
+  margin: 2.5rem auto 0;
+}
+
+.related-news h2 {
+  font-size: 1.25rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem;
+}
+
