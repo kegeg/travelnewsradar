@@ -17,10 +17,16 @@ export const AUTHOR = {
   image: '/images/kevin_round.png',
   countriesVisited: 105,
   sameAs: [
+    'https://x.com/kevinggagnon/',
     'https://instagram.com/kevin.flytrippers/',
     'https://www.linkedin.com/in/kevin-gagnon-2647a448/',
   ],
   social: [
+    {
+      id: 'x' as const,
+      label: 'X (Twitter)',
+      href: 'https://x.com/kevinggagnon/',
+    },
     {
       id: 'instagram' as const,
       label: 'Instagram',
