@@ -11,6 +11,7 @@ import {
 import { absUrl } from '../utils/images';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import CookieBanner from '../components/CookieBanner.astro';
 
 interface Props {
   title?: string;
@@ -71,7 +72,6 @@ const orgWebSiteLd = {
   ],
 };
 
-const GA_ID = 'G-JZV2D683SW';
 ---
 
 <!doctype html>
@@ -116,16 +116,6 @@ const GA_ID = 'G-JZV2D683SW';
         />
       )
     }
-    <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-    ></script>
-    <script is:inline define:vars={{ GA_ID }}>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag('js', new Date());
-      gtag('config', GA_ID);
-    </script>
   </head>
   <body>
     <Header />
@@ -133,6 +123,7 @@ const GA_ID = 'G-JZV2D683SW';
       <slot />
     </main>
     <Footer />
+    <CookieBanner />
     <script is:inline>
       // Breaking shows only on the publish calendar day (site TZ). Static host: no rebuild required.
       (function () {

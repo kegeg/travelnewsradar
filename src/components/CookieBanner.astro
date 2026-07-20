@@ -1,0 +1,130 @@
+---
+/** Minimal analytics consent banner (EU + Canada/Québec). GA loads only after Accept. */
+---
+
+<div
+  id="tnr-cookie-banner"
+  class="cookie-banner"
+  hidden
+  role="dialog"
+  aria-live="polite"
+  aria-label="Cookie consent"
+>
+  <p class="cookie-banner__text">
+    We use analytics cookies to understand traffic.{' '}
+    <a href="/privacy/">Privacy</a>
+  </p>
+  <div class="cookie-banner__actions">
+    <button type="button" class="cookie-banner__btn cookie-banner__btn--ghost" data-cookie="reject">
+      Reject
+    </button>
+    <button type="button" class="cookie-banner__btn cookie-banner__btn--primary" data-cookie="accept">
+      Accept
+    </button>
+  </div>
+</div>
+
+<script is:inline>
+  (function () {
+    var STORAGE_KEY = 'tnr_cookie_consent';
+    var GA_ID = 'G-JZV2D683SW';
+    // EU/EEA/UK + CA (Québec Law 25; country-level geo cannot isolate QC alone)
+    var CONSENT_COUNTRIES = {
+      AT: 1, BE: 1, BG: 1, HR: 1, CY: 1, CZ: 1, DK: 1, EE: 1, FI: 1, FR: 1,
+      DE: 1, GR: 1, HU: 1, IE: 1, IT: 1, LV: 1, LT: 1, LU: 1, MT: 1, NL: 1,
+      PL: 1, PT: 1, RO: 1, SK: 1, SI: 1, ES: 1, SE: 1, IS: 1, LI: 1, NO: 1,
+      GB: 1, UK: 1, CA: 1,
+    };
+
+    function getStored() {
+      try {
+        return localStorage.getItem(STORAGE_KEY);
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function setStored(value) {
+      try {
+        localStorage.setItem(STORAGE_KEY, value);
+      } catch (e) {}
+    }
+
+    function loadGa() {
+      if (window.__tnrGaLoaded) return;
+      window.__tnrGaLoaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      window.gtag = gtag;
+      gtag('js', new Date());
+      gtag('config', GA_ID, { anonymize_ip: true });
+    }
+
+    function hideBanner() {
+      var el = document.getElementById('tnr-cookie-banner');
+      if (el) el.hidden = true;
+    }
+
+    function showBanner() {
+      var el = document.getElementById('tnr-cookie-banner');
+      if (el) el.hidden = false;
+    }
+
+    function applyConsent(value) {
+      setStored(value);
+      hideBanner();
+      if (value === 'accepted') loadGa();
+    }
+
+    function needsConsentRegion(country) {
+      if (!country) return true; // fail closed: ask if unknown
+      return !!CONSENT_COUNTRIES[String(country).toUpperCase()];
+    }
+
+    function detectCountry() {
+      return fetch('/cdn-cgi/trace', { credentials: 'omit' })
+        .then(function (r) {
+          return r.text();
+        })
+        .then(function (text) {
+          var m = /(?:^|\n)loc=([A-Z]{2})/i.exec(text);
+          return m ? m[1].toUpperCase() : null;
+        })
+        .catch(function () {
+          return null;
+        });
+    }
+
+    var stored = getStored();
+    if (stored === 'accepted') {
+      loadGa();
+      return;
+    }
+    if (stored === 'rejected') {
+      return;
+    }
+
+    detectCountry().then(function (country) {
+      if (!needsConsentRegion(country)) {
+        // Outside EU/CA: load analytics without a banner
+        loadGa();
+        return;
+      }
+      showBanner();
+    });
+
+    document.addEventListener('click', function (e) {
+      var t = e.target;
+      if (!t || !t.getAttribute) return;
+      var action = t.getAttribute('data-cookie');
+      if (action === 'accept') applyConsent('accepted');
+      if (action === 'reject') applyConsent('rejected');
+    });
+  })();
+</script>
