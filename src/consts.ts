@@ -14,9 +14,23 @@ export const AUTHOR = {
   name: 'Kevin Gagnon',
   url: '/author/kevin/',
   jobTitle: 'Editor',
+  image: '/images/kevin_round.png',
+  countriesVisited: 105,
   sameAs: [
     'https://instagram.com/kevin.flytrippers/',
     'https://www.linkedin.com/in/kevin-gagnon-2647a448/',
+  ],
+  social: [
+    {
+      id: 'instagram' as const,
+      label: 'Instagram',
+      href: 'https://instagram.com/kevin.flytrippers/',
+    },
+    {
+      id: 'linkedin' as const,
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/kevin-gagnon-2647a448/',
+    },
   ],
 };
 
@@ -30,22 +44,17 @@ export function calendarDayInSiteTz(date: Date): string {
   }).format(date);
 }
 
-/** Replace `#` when accounts are live. */
+/** Live brand social profiles (footer + Organization sameAs). */
 export const SOCIAL_LINKS = [
   {
     id: 'x',
     label: 'X (Twitter)',
-    href: '#',
+    href: 'https://x.com/travelnewsradar',
   },
   {
     id: 'instagram',
     label: 'Instagram',
-    href: '#',
-  },
-  {
-    id: 'tiktok',
-    label: 'TikTok',
-    href: '#',
+    href: 'https://www.instagram.com/travelnewsradar',
   },
 ] as const;
 

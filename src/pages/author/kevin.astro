@@ -1,16 +1,24 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import SocialIcon from '../../components/SocialIcon.astro';
 import { AUTHOR, SITE_NAME, SITE_URL } from '../../consts';
+import { absUrl } from '../../utils/images';
+
+const authorUrl = new URL(AUTHOR.url, SITE_URL).href;
+const imageUrl = absUrl(AUTHOR.image);
 
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: AUTHOR.name,
-  url: new URL(AUTHOR.url, SITE_URL).href,
+  url: authorUrl,
+  image: imageUrl,
   jobTitle: AUTHOR.jobTitle,
+  description: `Editor of ${SITE_NAME}. Full-time traveler with on-the-ground experience in ${AUTHOR.countriesVisited} countries.`,
   worksFor: {
     '@type': 'NewsMediaOrganization',
     name: SITE_NAME,
+    url: SITE_URL,
   },
   sameAs: AUTHOR.sameAs,
 };
@@ -18,53 +26,84 @@ const jsonLd = {
 
 <BaseLayout
   title={`${AUTHOR.name}, Editor`}
-  description={`${AUTHOR.name} is the editor of ${SITE_NAME} and co-founder of Flytrippers.`}
+  description={`${AUTHOR.name} is the editor of ${SITE_NAME}. Full-time traveler with on-the-ground experience across ${AUTHOR.countriesVisited} countries — what breaking travel news means when you have actually been there.`}
+  ogImage={AUTHOR.image}
+  ogImageWidth={500}
+  ogImageHeight={500}
   jsonLd={jsonLd}
 >
-  <article class="article">
-    <h1>{AUTHOR.name}</h1>
-    <p class="article__meta" style="border: 0; padding: 0; margin-top: -0.25rem;">
-      Editor, {SITE_NAME}
-    </p>
+  <article class="article author-page">
+    <header class="author-header">
+      <img
+        class="author-photo"
+        src={AUTHOR.image}
+        alt={`${AUTHOR.name}`}
+        width="160"
+        height="160"
+      />
+      <div class="author-header__text">
+        <h1>{AUTHOR.name}</h1>
+        <p class="author-role">Editor, {SITE_NAME}</p>
+        <ul class="author-social">
+          {
+            AUTHOR.social.map((item) => (
+              <li>
+                <a
+                  class="social-link"
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer me"
+                  aria-label={item.label}
+                  title={item.label}
+                >
+                  <SocialIcon network={item.id} />
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </header>
+
     <div class="article__body">
       <p>
-        <strong>{AUTHOR.name} is the co-founder of Flytrippers</strong>, where he
-        leads the technology behind the website and the systems used to spot
-        flight deals. At {SITE_NAME}, he is the editor responsible for the news
-        coverage travelers see here.
+        {AUTHOR.name} is the editor of {SITE_NAME}. He reads breaking travel news
+        the way a traveler does: does this change a flight, a border, a hotel
+        night, or a trip you already booked — and what should you check before
+        you react?
       </p>
       <p>
-        In 2018, Kevin sold all his possessions and became a full-time digital
-        nomad. Since then, he has traveled full-time, lived on 6 continents, and
-        explored countries across the world.
+        That lens comes from living it. Since 2018 he has traveled full-time,
+        lived on six continents, and visited{' '}
+        <strong>{AUTHOR.countriesVisited} countries</strong> so far. Hundreds of
+        flights and long stays in places from Jordan and Turkey to Southeast
+        Asia, Africa, and Latin America mean a lot of the “what this means on
+        the ground” framing here is not theoretical.
       </p>
       <p>
-        Kevin has also established a second residency and manages personal and
-        business banking across 3 countries. This first-hand experience shapes
-        his writing about visas, border crossings, banking abroad, and the
-        logistics of long-term international travel.
+        When a story hits a place he has been recently, he pulls from that
+        experience — sirens and local advice in Jordan, empty hotels when
+        tourism drops, what embassy alerts looked like next to local news — and
+        still cross-checks against current primary sources. Past trips are
+        context, not a promise that conditions are the same today.
       </p>
       <p>
-        He specializes in advanced travel rewards strategies, particularly
-        accessing and maximizing US credit cards as a non-American. His goal is
-        to explain how these strategies work, where the real value is, and how
-        travelers can use them responsibly.
+        He also knows the logistics side of long-term travel: second residency,
+        banking across countries, visas, and border reality when plans change
+        fast. He trained as a structural engineer at Université Laval and spent
+        over a decade in the Ordre des ingénieurs du Québec — the same
+        evidence-first habit shows up in how he edits travel news.
       </p>
       <p>
-        Kevin’s travel expertise has also been featured in Canadian media,
-        including CBC’s <em>Dragons’ Den</em> with co-founder Andrew D’Amours.
-        He trained as a structural engineer at Université Laval and was a member
-        of the Ordre des ingénieurs du Québec for over a decade.
+        Kevin is also co-founder of{' '}
+        <a href="https://flytrippers.com/">Flytrippers</a>, where the deeper
+        rewards and deal work lives. On {SITE_NAME}, the job is simpler: clear
+        reporting on what just happened, and a practical take for people who
+        actually travel.
       </p>
       <p>
-        Originally from Québec, Kevin writes to help readers travel more
-        independently, navigate the practical side of international travel, and
-        understand breaking travel news when it affects real trips.
-      </p>
-      <p>
-        <a href="https://instagram.com/kevin.flytrippers/">Instagram</a>
-        ·
-        <a href="https://www.linkedin.com/in/kevin-gagnon-2647a448/">LinkedIn</a>
+        Originally from Québec. Featured in Canadian media including CBC’s{' '}
+        <em>Dragons’ Den</em> with Flytrippers co-founder Andrew D’Amours.
       </p>
     </div>
   </article>
