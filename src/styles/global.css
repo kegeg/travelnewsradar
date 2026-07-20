@@ -648,4 +648,31 @@ li {
   max-width: 40rem;
 }
 
+.about-follow {
+  list-style: none;
+  margin: 0 0 1.25rem;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+}
+
+.about-follow .social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.about-follow .social-link:hover {
+  color: var(--color-link);
+}
+
+.about-follow a {
+  font-weight: 600;
+}
+
+
 

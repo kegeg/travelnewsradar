@@ -1,38 +1,112 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { AUTHOR, SITE_DESCRIPTION, SITE_NAME } from '../consts';
+import SocialIcon from '../components/SocialIcon.astro';
+import {
+  AUTHOR,
+  SITE_NAME,
+  SITE_URL,
+  SOCIAL_LINKS,
+} from '../consts';
+
+const pageUrl = new URL('/about/', SITE_URL).href;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: `About ${SITE_NAME}`,
+  url: pageUrl,
+  description: `${SITE_NAME} covers breaking travel news for travelers: what happened, what it means for your trip, and what to check next.`,
+  isPartOf: {
+    '@type': 'WebSite',
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+  about: {
+    '@type': 'NewsMediaOrganization',
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+  mainEntity: {
+    '@type': 'Person',
+    name: AUTHOR.name,
+    url: new URL(AUTHOR.url, SITE_URL).href,
+    jobTitle: AUTHOR.jobTitle,
+  },
+};
 ---
 
 <BaseLayout
-  title="About"
-  description={`About ${SITE_NAME}: ${SITE_DESCRIPTION}`}
+  title={`About ${SITE_NAME}`}
+  description={`${SITE_NAME} covers breaking travel news for travelers in Canada and the US: flights, borders, advisories, and trip disruptions. What happened, what it means, and what to check next. Edited by ${AUTHOR.name}.`}
+  jsonLd={jsonLd}
 >
   <article class="article">
     <h1>About {SITE_NAME}</h1>
     <div class="article__body">
       <p>
-        {SITE_NAME} spots breaking travel news as it enters range and turns it
-        into clear original articles for people who actually travel: what
-        happened, what it means, and what to do next.
+        {SITE_NAME} is a travel news site for people with real trips. We cover
+        breaking stories that can change a flight, a border crossing, a hotel
+        night, or whether you should change plans: airline and airport chaos,
+        entry rules, advisories, and other travel news while it still matters.
       </p>
       <p>
-        We focus on short-supply news moments, not evergreen listicles. The goal
-        is to be useful in the first hours after a story breaks, when travelers
-        need a straight answer.
+        Every article aims for the same three answers: what happened, what it
+        means for travelers, and what you should check next. We are not building
+        evergreen destination guides. The point is useful coverage in the hours
+        and days after a story breaks.
       </p>
+
+      <h2>Who {SITE_NAME} is for</h2>
+      <p>
+        Mostly travelers in Canada and the United States planning leisure trips,
+        plus anyone else whose plans get hit by the same news: frequent flyers,
+        long-term travelers, and people already on the road. If the story does
+        not affect a trip, we usually leave it alone.
+      </p>
+
       <h2>Editor</h2>
       <p>
         {SITE_NAME} is edited by{' '}
-        <a href={AUTHOR.url}>{AUTHOR.name}</a>, who is also cofounder of
-        Flytrippers.
-      </p>
-      <h2>Stay in range</h2>
-      <p>
-        Follow along on social (links coming soon) or check back on the{' '}
-        <a href="/">latest</a> stories. Email alerts are on the way.
+        <a href={AUTHOR.url}>{AUTHOR.name}</a>. He has been living on the road
+        since 2018 and has visited {AUTHOR.countriesVisited} countries so far.
+        More background is on his <a href={AUTHOR.url}>author page</a>.
       </p>
       <p>
-        Questions? See <a href="/contact/">Contact</a>.
+        Kevin is also a cofounder of{' '}
+        <a href="https://flytrippers.com/">Flytrippers</a>, which covers travel
+        rewards, flight deals, and travel tips.
+      </p>
+
+      <h2>Follow the news</h2>
+      <p>
+        New stories land on the <a href="/">homepage</a>. You can also follow
+        {SITE_NAME} on social or subscribe via RSS:
+      </p>
+      <ul class="about-follow">
+        {
+          SOCIAL_LINKS.map((item) => (
+            <li>
+              <a
+                class="social-link"
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer me"
+                aria-label={item.label}
+                title={item.label}
+              >
+                <SocialIcon network={item.id} />
+                <span>{item.label}</span>
+              </a>
+            </li>
+          ))
+        }
+        <li>
+          <a href="/rss.xml">RSS feed</a>
+        </li>
+      </ul>
+      <p>
+        Email alerts are coming later. Questions? See{' '}
+        <a href="/contact/">Contact</a>.
       </p>
     </div>
   </article>
