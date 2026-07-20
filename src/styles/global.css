@@ -657,22 +657,56 @@ li {
   gap: 0.75rem 1.25rem;
 }
 
-.about-follow .social-link {
+.about-follow__link {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.45rem;
   text-decoration: none;
   font-weight: 600;
   color: var(--color-ink);
 }
 
-.about-follow .social-link:hover {
+.about-follow__link:hover {
   color: var(--color-link);
 }
 
-.about-follow a {
-  font-weight: 600;
+.about-follow__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  flex-shrink: 0;
+  border-radius: 999px;
+  border: 1px solid var(--color-rule);
+  background: var(--color-paper);
+  color: var(--color-ink);
 }
+
+.about-follow__link:hover .about-follow__icon {
+  border-color: color-mix(in srgb, var(--color-ink) 25%, var(--color-rule));
+  color: var(--color-link);
+}
+
+.about-signup {
+  margin: 0 0 1.25rem;
+  max-width: 28rem;
+}
+
+.about-signup__label {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.footer-signup__beehiiv {
+  margin-top: 0.35rem;
+  min-height: 2.5rem;
+}
+
 
 
 

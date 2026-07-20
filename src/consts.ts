@@ -64,9 +64,14 @@ export const SOCIAL_LINKS = [
   },
 ] as const;
 
+export const BEEHIIV_FORM_ID = 'afa8077b-0891-4511-a3f9-527e5748637d';
+export const BEEHIIV_LOADER =
+  'https://subscribe-forms.beehiiv.com/v3/loader.js';
+
 /** Organization sameAs — only real profile URLs (skip stubs). */
 export function organizationSameAs(): string[] {
   return SOCIAL_LINKS.map((s) => s.href).filter(
     (href) => href.startsWith('http://') || href.startsWith('https://'),
   );
 }
+

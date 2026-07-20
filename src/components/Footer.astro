@@ -6,27 +6,17 @@ import SocialIcon from './SocialIcon.astro';
 <footer class="site-footer">
   <div class="site-footer__inner">
     <div class="site-footer__top">
-      <form class="footer-signup" action="#" method="post" data-placeholder="true">
-        <label class="footer-signup__label" for="footer-email">
-          Get breaking travel news
-        </label>
-        <div class="footer-signup__row">
-          <input
-            id="footer-email"
-            class="footer-signup__input"
-            type="email"
-            name="email"
-            autocomplete="email"
-            placeholder="you@example.com"
-            required
-            disabled
-          />
-          <button class="footer-signup__btn" type="submit" disabled>
-            Subscribe
-          </button>
+      <div class="footer-signup">
+        <p class="footer-signup__label">Get breaking travel news</p>
+        <div class="footer-signup__beehiiv">
+          <script
+            async
+            src="https://subscribe-forms.beehiiv.com/v3/loader.js"
+            data-beehiiv-form="afa8077b-0891-4511-a3f9-527e5748637d"
+            is:inline
+          ></script>
         </div>
-        <p class="footer-signup__note">Email alerts coming soon.</p>
-      </form>
+      </div>
 
       <div class="site-footer__social">
         <p class="site-footer__social-label">Follow</p>
@@ -62,7 +52,7 @@ import SocialIcon from './SocialIcon.astro';
         <a href="/terms/">Terms</a>
       </nav>
       <p class="site-footer__copy">
-        &copy; {new Date().getFullYear()}
+        &copy; {new Date().getFullYear()}{' '}
         {SITE_NAME}
       </p>
     </div>
