@@ -2,10 +2,11 @@
 import '../styles/global.css';
 import {
   DEFAULT_OG_IMAGE,
-  organizationSameAs,
+  ORGANIZATION_SAME_AS,
   PUBLISHER_LOGO,
   SITE_DESCRIPTION,
   SITE_NAME,
+  SITE_TAGLINE,
   SITE_URL,
 } from '../consts';
 import { absUrl } from '../utils/images';
@@ -42,7 +43,6 @@ const documentTitle = title ?? SITE_NAME;
 const canonical =
   typeof canonicalURL === 'string' ? canonicalURL : canonicalURL.href;
 const ogImageAbs = absUrl(ogImage);
-const sameAs = organizationSameAs();
 
 const orgWebSiteLd = {
   '@context': 'https://schema.org',
@@ -52,13 +52,15 @@ const orgWebSiteLd = {
       '@id': `${SITE_URL}/#organization`,
       name: SITE_NAME,
       url: SITE_URL,
+      slogan: SITE_TAGLINE,
+      description: SITE_DESCRIPTION,
       logo: {
         '@type': 'ImageObject',
         url: PUBLISHER_LOGO,
         width: 600,
         height: 60,
       },
-      ...(sameAs.length ? { sameAs } : {}),
+      sameAs: ORGANIZATION_SAME_AS,
     },
     {
       '@type': 'WebSite',
@@ -71,6 +73,7 @@ const orgWebSiteLd = {
     },
   ],
 };
+
 
 ---
 

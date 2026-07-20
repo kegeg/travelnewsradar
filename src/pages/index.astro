@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import StoryCard from '../components/StoryCard.astro';
 import RadarMark from '../components/RadarMark.astro';
-import { SITE_DESCRIPTION, SITE_NAME } from '../consts';
+import { SITE_NAME, SITE_TAGLINE } from '../consts';
 
 const articles = (
   await getCollection('articles', ({ data }) => !data.draft)
@@ -12,17 +12,14 @@ const articles = (
 const [lead, ...rest] = articles;
 ---
 
-<BaseLayout description={SITE_DESCRIPTION}>
-  <h1 class="sr-only">{SITE_NAME}: latest travel news</h1>
+<BaseLayout description={`${SITE_TAGLINE}. ${SITE_NAME} covers breaking travel news for travelers.`}>
+  <h1 class="sr-only">{SITE_NAME}: {SITE_TAGLINE}</h1>
 
   <div class="radar-intro">
     <RadarMark size={22} class="radar-intro__mark" />
     <div>
       <p class="hero-label">On the radar</p>
-      <p class="radar-intro__sub">
-        Breaking travel news as it enters range: what happened, what it means
-        for travelers.
-      </p>
+      <p class="radar-intro__sub">{SITE_TAGLINE}</p>
     </div>
   </div>
 

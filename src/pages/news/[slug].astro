@@ -5,6 +5,7 @@ import StoryCard from '../../components/StoryCard.astro';
 import {
   AUTHOR,
   calendarDayInSiteTz,
+  ORGANIZATION_SAME_AS,
   PUBLISHER_LOGO,
   SITE_NAME,
   SITE_TZ,
@@ -25,6 +26,9 @@ const { Content } = await render(article);
 
 const published = article.data.pubDate;
 const modified = article.data.updatedDate ?? article.data.pubDate;
+const showUpdated =
+  Boolean(article.data.updatedDate) &&
+  article.data.updatedDate!.valueOf() !== published.valueOf();
 const breakingDay = calendarDayInSiteTz(published);
 const pageUrl = new URL(`/news/${article.id}/`, SITE_URL).href;
 const ogImage = article.data.image
@@ -82,6 +86,7 @@ const jsonLd = {
       width: 600,
       height: 60,
     },
+    sameAs: ORGANIZATION_SAME_AS,
   },
   ...(imageObjects ? { image: imageObjects } : {}),
 };
@@ -136,6 +141,18 @@ const jsonLd = {
       <time datetime={published.toISOString()} itemprop="datePublished">
         {formatDateTime(published)}
       </time>
+      {
+        showUpdated && (
+          <time datetime={modified.toISOString()} itemprop="dateModified">
+            Updated {formatDateTime(modified)}
+          </time>
+        )
+      }
+      {
+        !showUpdated && (
+          <meta itemprop="dateModified" content={modified.toISOString()} />
+        )
+      }
     </div>
     <div class="article__body" itemprop="articleBody">
       <Content />

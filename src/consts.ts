@@ -1,7 +1,10 @@
 export const SITE_NAME = 'TravelNewsRadar';
 export const SITE_URL = 'https://travelnewsradar.com';
+/** Public site tagline (About, homepage, schema slogan). */
+export const SITE_TAGLINE =
+  'Breaking Travel News & What It Means for Travelers';
 export const SITE_DESCRIPTION =
-  'Breaking travel news as it enters the radar: what happened, what it means for travelers, and what to do.';
+  'Breaking travel news & what it means for travelers: what happened, what it means for your trip, and what to check next.';
 export const CONTACT_EMAIL = 'info@travelnewsradar.com';
 /** Site editorial timezone for dates and Breaking badge expiry */
 export const SITE_TZ = 'America/New_York';
@@ -64,14 +67,14 @@ export const SOCIAL_LINKS = [
   },
 ] as const;
 
+/** Canonical Organization sameAs URLs for schema (brand profiles only). */
+export const ORGANIZATION_SAME_AS: string[] = SOCIAL_LINKS.map((s) => s.href);
+
 export const BEEHIIV_FORM_ID = 'afa8077b-0891-4511-a3f9-527e5748637d';
 export const BEEHIIV_LOADER =
   'https://subscribe-forms.beehiiv.com/v3/loader.js';
 
-/** Organization sameAs — only real profile URLs (skip stubs). */
 export function organizationSameAs(): string[] {
-  return SOCIAL_LINKS.map((s) => s.href).filter(
-    (href) => href.startsWith('http://') || href.startsWith('https://'),
-  );
+  return [...ORGANIZATION_SAME_AS];
 }
 
