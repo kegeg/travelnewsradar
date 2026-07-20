@@ -11,7 +11,9 @@
     "preview": "npm run build && wrangler dev",
     "astro": "astro",
     "generate-types": "wrangler types",
-    "deploy": "npm run build && wrangler deploy"
+    "indexnow": "node scripts/indexnow.mjs",
+    "indexnow:changed": "node scripts/indexnow.mjs --changed",
+    "deploy": "npm run build && wrangler deploy && npm run indexnow:changed"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^14.1.3",

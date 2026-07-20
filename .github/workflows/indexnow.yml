@@ -1,0 +1,41 @@
+# Ping IndexNow after main deploys (Cloudflare Pages builds from git).
+# Waits until the ownership key file is live, then submits changed article URLs.
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: indexnow-main
+  cancel-in-progress: true
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Wait for IndexNow key file (Pages deploy)
+        run: |
+          KEY_URL="https://travelnewsradar.com/262d1179c128167ac82efda9f5704e69.txt"
+          for i in $(seq 1 36); do
+            code=$(curl -sS -o /tmp/indexnow-key.txt -w "%{http_code}" "$KEY_URL" || echo "000")
+            if [ "$code" = "200" ]; then
+              echo "Key file reachable (attempt $i)"
+              cat /tmp/indexnow-key.txt
+              exit 0
+            fi
+            echo "Waiting for deploy… ($i) HTTP $code"
+            sleep 10
+          done
+          echo "Key file not reachable after wait; continuing with submit anyway"
+
+      - name: Submit URLs to IndexNow
+        run: node scripts/indexnow.mjs --changed
