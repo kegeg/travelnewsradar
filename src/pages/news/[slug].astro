@@ -1,7 +1,13 @@
 ---
 import { getCollection, render } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { AUTHOR, SITE_NAME, SITE_URL } from '../../consts';
+import {
+  AUTHOR,
+  calendarDayInSiteTz,
+  SITE_NAME,
+  SITE_TZ,
+  SITE_URL,
+} from '../../consts';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles', ({ data }) => !data.draft);
@@ -16,6 +22,7 @@ const { Content } = await render(article);
 
 const published = article.data.pubDate;
 const modified = article.data.updatedDate ?? article.data.pubDate;
+const breakingDay = calendarDayInSiteTz(published);
 const pageUrl = new URL(`/news/${article.id}/`, SITE_URL).href;
 const imageUrl = article.data.image
   ? new URL(article.data.image, SITE_URL).href
@@ -93,7 +100,14 @@ const jsonLd = {
     {
       article.data.breaking && (
         <p class="story__meta" style="margin-bottom: 0.75rem;">
-          <span class="badge-breaking">Breaking</span>
+          <span
+            class="badge-breaking"
+            data-breaking-day={breakingDay}
+            data-breaking-tz={SITE_TZ}
+            hidden
+          >
+            Breaking
+          </span>
         </p>
       )
     }

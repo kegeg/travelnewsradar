@@ -88,5 +88,26 @@ const GA_ID = 'G-JZV2D683SW';
       <slot />
     </main>
     <Footer />
+    <script is:inline>
+      // Breaking shows only on the publish calendar day (site TZ). Static host: no rebuild required.
+      (function () {
+        document.querySelectorAll('[data-breaking-day]').forEach(function (el) {
+          var day = el.getAttribute('data-breaking-day');
+          var tz = el.getAttribute('data-breaking-tz') || 'America/New_York';
+          if (!day) return;
+          var today = new Intl.DateTimeFormat('en-CA', {
+            timeZone: tz,
+            year: 'numeric',
+            month: '2-digit',
+            day: '2-digit',
+          }).format(new Date());
+          if (today > day) {
+            el.remove();
+          } else {
+            el.removeAttribute('hidden');
+          }
+        });
+      })();
+    </script>
   </body>
 </html>

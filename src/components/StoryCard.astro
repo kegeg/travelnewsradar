@@ -1,5 +1,6 @@
 ---
 import type { CollectionEntry } from 'astro:content';
+import { calendarDayInSiteTz, SITE_TZ } from '../consts';
 
 interface Props {
   article: CollectionEntry<'articles'>;
@@ -10,13 +11,14 @@ const { article, variant = 'card' } = Astro.props;
 const href = `/news/${article.id}/`;
 const image = article.data.image;
 const imageAlt = article.data.imageAlt ?? '';
+const breakingDay = calendarDayInSiteTz(article.data.pubDate);
 
 function formatDate(date: Date) {
   return date.toLocaleDateString('en-US', {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
-    timeZone: 'America/New_York',
+    timeZone: SITE_TZ,
   });
 }
 ---
@@ -41,7 +43,14 @@ function formatDate(date: Date) {
       <div class="story__meta">
         {
           article.data.breaking && (
-            <span class="badge-breaking">Breaking</span>
+            <span
+              class="badge-breaking"
+              data-breaking-day={breakingDay}
+              data-breaking-tz={SITE_TZ}
+              hidden
+            >
+              Breaking
+            </span>
           )
         }
         <time datetime={article.data.pubDate.toISOString()}>

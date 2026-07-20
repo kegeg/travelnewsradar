@@ -3,7 +3,12 @@ import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 const articles = defineCollection({
-  loader: glob({ base: './src/content/articles', pattern: '**/*.md' }),
+  loader: glob({
+    base: './src/content/articles',
+    pattern: '**/*.md',
+    // Draft/compare helpers (_before, _notes) must never become public URLs
+    ignore: ['**/_*.md', '**/*_before.md'],
+  }),
   schema: z.object({
     title: z.string().max(110),
     description: z.string(),
@@ -12,6 +17,8 @@ const articles = defineCollection({
     author: z.string().default('Kevin Gagnon'),
     breaking: z.boolean().default(false),
     draft: z.boolean().default(false),
+    /** If true: do not edit without Kevin’s written approval */
+    locked: z.boolean().default(false),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
   }),
