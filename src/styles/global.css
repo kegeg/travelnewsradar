@@ -11,6 +11,8 @@
     sans-serif;
   --max: 52rem;
   --max-wide: 78rem;
+  /* Content pages (article/about/author/legal): readable width without empty card sides */
+  --max-article: 56rem;
   --space: 1.25rem;
   --radius: 0.75rem;
 }
@@ -512,7 +514,7 @@ li {
 }
 
 .article {
-  max-width: var(--max-wide);
+  max-width: var(--max-article);
   margin: 0 auto;
   background: var(--color-surface);
   padding: 1.5rem 1.25rem 2.5rem;
@@ -528,7 +530,7 @@ li {
 
 .article__body {
   font-size: 1.0625rem;
-  max-width: 52rem;
+  max-width: none;
 }
 
 .article__hero {
@@ -645,7 +647,7 @@ li {
 }
 
 .author-page .article__body {
-  max-width: 40rem;
+  max-width: none;
 }
 
 .about-follow {
