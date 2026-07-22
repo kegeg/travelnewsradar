@@ -15,9 +15,9 @@ Direct US passenger service on that corridor has been blocked since 1985, after 
 
 | Changed | Didn’t change |
 | --- | --- |
-| White House wants US carriers allowed to fly to Lebanon again | No airline has announced Beirut routes or schedules |
-| FAA is preparing to implement the directive with interagency partners | Beirut still needs the usual US security review and certification before commercial operation restart |
-| The political door to direct US-carrier service is open for the first time in decades | You still get there the same way today: connections through Europe, Turkey, or the Gulf |
+| White House directing US carriers to fly to Lebanon again | No airline has announced Beirut routes |
+| FAA working with partners to implement the directive | Beirut still needs a US security review first |
+| Political door to direct US-carrier service is open | Still connecting via Europe, Turkey, or the Gulf |
 
 Travelers could already buy tickets to Lebanon and fly in on connecting itineraries. The old restriction was mainly about **US carriers operating direct service**, not about Americans being unable to reach Beirut at all.
 
