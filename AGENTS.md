@@ -8,6 +8,10 @@ astro dev --background
 
 Manage the background server with `astro dev stop`, `astro dev status`, and `astro dev logs`.
 
+## Deploy / ship live
+
+**Push to `origin/main` is the ship.** Cloudflare deploys from GitHub after the push. Do not run local `wrangler deploy` / `npm run deploy` for routine updates unless Kevin explicitly asks. IndexNow may still run via GitHub Actions on push.
+
 ## Documentation
 
 Full documentation: https://docs.astro.build
