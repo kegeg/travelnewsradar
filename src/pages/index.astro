@@ -14,11 +14,6 @@ const [lead, ...rest] = articles;
 <BaseLayout description={`${SITE_TAGLINE}. ${SITE_NAME} covers breaking travel news for travelers.`}>
   <h1 class="sr-only">{SITE_NAME}: {SITE_TAGLINE}</h1>
 
-  <header class="masthead">
-    <p class="masthead__label">Travel news</p>
-    <p class="masthead__title">Latest</p>
-  </header>
-
   {
     articles.length === 0 ? (
       <p>No articles yet.</p>
