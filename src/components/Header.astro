@@ -5,7 +5,6 @@ import { CATEGORIES, categorySlug } from '../consts';
 <header class="site-header">
   <div class="site-header__inner">
     <a class="brand" href="/" aria-label="TravelNewsRadar home">
-      <span class="brand__name">Travel News Radar</span>
       <img
         class="brand__logo"
         src="/brand/tnr-mark.png"
@@ -14,8 +13,10 @@ import { CATEGORIES, categorySlug } from '../consts';
         height="72"
         decoding="async"
       />
+      <span class="brand__name">Travel News Radar</span>
     </a>
     <nav class="site-nav" aria-label="Primary">
+      <a href="/">Latest</a>
       {
         CATEGORIES.map((category) => (
           <a href={`/category/${categorySlug(category)}/`}>{category}</a>
