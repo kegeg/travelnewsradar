@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="6" fill="#0B1220"/>
-  <text x="3" y="24" fill="#F7F8FA" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="800" letter-spacing="-0.8">TN</text>
-  <text x="17.5" y="24" fill="#E10600" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-size="14" font-weight="800" letter-spacing="-0.8">R</text>
-  <!-- Arcs above R -->
-  <path d="M22 12c2.2-2.4 5.2-3.8 8.2-3.8" stroke="#037CFC" stroke-width="1.35" stroke-linecap="round" fill="none"/>
-  <path d="M22 12c3.2-3.5 7.2-5.5 11-5.5" stroke="#037CFC" stroke-width="1.35" stroke-linecap="round" fill="none" opacity="0.85"/>
-  <circle cx="22" cy="12" r="0.95" fill="#037CFC"/>
-</svg>

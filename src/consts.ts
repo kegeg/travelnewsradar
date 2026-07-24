@@ -11,7 +11,7 @@ export const SITE_TZ = 'America/New_York';
 /** Default Open Graph / Twitter image (1200×630) when a page has no hero */
 export const DEFAULT_OG_IMAGE = '/images/og-default.jpg';
 /** Google News / publisher logo (News requires ~600×60) */
-export const PUBLISHER_LOGO = `${SITE_URL}/logo-600x60.svg`;
+export const PUBLISHER_LOGO = `${SITE_URL}/logo-600x60.png`;
 
 /** Primary article categories (extend when a story does not fit). */
 export const CATEGORIES = [
