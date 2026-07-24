@@ -6,8 +6,8 @@ const articles = defineCollection({
   loader: glob({
     base: './src/content/articles',
     pattern: '**/*.md',
-    // Draft/compare helpers (_before, _notes) must never become public URLs
-    ignore: ['**/_*.md', '**/*_before.md'],
+    // Draft/compare helpers must never become public URLs
+    ignore: ['**/_*.md', '**/*_before.md', '**/*_old.md'],
   }),
   schema: z.object({
     title: z.string().max(110),
