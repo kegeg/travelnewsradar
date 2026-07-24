@@ -131,14 +131,34 @@ li {
 .brand {
   display: inline-flex;
   align-items: center;
+  gap: 0.65rem;
   text-decoration: none;
   color: inherit;
+}
+
+.brand__name {
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
+  color: var(--color-ink);
+  line-height: 1.15;
+  white-space: nowrap;
 }
 
 .brand__logo {
   display: block;
   height: 2.35rem;
   width: auto;
+}
+
+@media (max-width: 520px) {
+  .brand__name {
+    font-size: 0.92rem;
+  }
+
+  .brand__logo {
+    height: 2rem;
+  }
 }
 
 .site-nav {
