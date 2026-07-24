@@ -1,6 +1,6 @@
 ---
 /**
- * TNR mark: navy TN + red R + light-blue signal arcs (v1 brand).
+ * TNR mark: navy TN + red R + light-blue signal arcs above the R (v1 brand).
  */
 interface Props {
   class?: string;
@@ -15,25 +15,31 @@ const { class: className = '' } = Astro.props;
   >
   <svg
     class="tnr-mark__arcs"
-    viewBox="0 0 28 28"
-    width="18"
+    viewBox="0 0 24 20"
+    width="22"
     height="18"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
+    <!-- Arcs radiate up/right from above the R (wifi-style), not through the letter -->
     <path
-      d="M6 16c5 2.6 8.5 7.2 8.5 12.5"
+      d="M4 16c3.2-3.8 7.8-6 12.5-6"
       stroke="currentColor"
-      stroke-width="2.4"
+      stroke-width="2.2"
       stroke-linecap="round"></path>
     <path
-      d="M2 12c8 3.8 13.5 10.5 13.5 18"
+      d="M4 16c4.6-5.6 10.8-8.8 17-8.8"
       stroke="currentColor"
-      stroke-width="2.4"
+      stroke-width="2.2"
       stroke-linecap="round"
-      opacity="0.85"></path>
-    <circle cx="6" cy="16" r="1.8" fill="currentColor"></circle>
-    <circle cx="2" cy="12" r="1.8" fill="currentColor"></circle>
+      opacity="0.9"></path>
+    <path
+      d="M4 16c5.8-7.2 13.5-11 20.5-11"
+      stroke="currentColor"
+      stroke-width="2.2"
+      stroke-linecap="round"
+      opacity="0.75"></path>
+    <circle cx="4" cy="16" r="1.7" fill="currentColor"></circle>
   </svg>
 </span>
 
@@ -41,7 +47,9 @@ const { class: className = '' } = Astro.props;
   .tnr-mark {
     position: relative;
     display: inline-flex;
-    align-items: flex-start;
+    align-items: flex-end;
+    padding-right: 0.85rem;
+    padding-top: 0.45rem;
     line-height: 1;
     color: var(--color-radar);
   }
@@ -54,13 +62,14 @@ const { class: className = '' } = Astro.props;
   }
 
   .tnr-mark__r {
+    position: relative;
     color: var(--color-breaking);
   }
 
   .tnr-mark__arcs {
     position: absolute;
-    top: -0.15rem;
-    right: -0.85rem;
+    top: 0;
+    right: 0;
     pointer-events: none;
   }
 </style>
