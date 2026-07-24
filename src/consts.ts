@@ -13,6 +13,26 @@ export const DEFAULT_OG_IMAGE = '/images/og-default.jpg';
 /** Google News / publisher logo (News requires ~600×60) */
 export const PUBLISHER_LOGO = `${SITE_URL}/logo-600x60.svg`;
 
+/** Primary article categories (extend when a story does not fit). */
+export const CATEGORIES = [
+  'Flights',
+  'Borders',
+  'Health',
+  'Rewards',
+  'Advisories',
+  'Labor',
+] as const;
+
+export type Category = (typeof CATEGORIES)[number];
+
+export function categorySlug(category: Category): string {
+  return category.toLowerCase();
+}
+
+export function categoryFromSlug(slug: string): Category | undefined {
+  return CATEGORIES.find((c) => categorySlug(c) === slug.toLowerCase());
+}
+
 export const AUTHOR = {
   name: 'Kevin Gagnon',
   url: '/author/kevin/',
@@ -77,4 +97,3 @@ export const BEEHIIV_LOADER =
 export function organizationSameAs(): string[] {
   return [...ORGANIZATION_SAME_AS];
 }
-

@@ -2,6 +2,7 @@
 title: "What Canada's new Ebola border rules mean for travelers"
 description: "Canada now bars foreign nationals who were in the DRC in the past 21 days. Here's how that stacks up with US rules, and what it means for trips that touch Uganda or South Sudan."
 pubDate: 2026-07-20T12:00:00-04:00
+category: Health
 breaking: true
 image: "/images/articles/canada-ebola-border-radar.jpg"
 imageAlt: "Dark map of Africa with a lime radar overlay centered on the DRC region"

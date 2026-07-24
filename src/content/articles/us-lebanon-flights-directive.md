@@ -2,6 +2,7 @@
 title: "US-Lebanon direct flights: what changed and what didn't"
 description: "Trump directed the US to allow airlines to fly to Lebanon again after 41 years. No tickets are for sale yet. Here’s the traveler comparison."
 pubDate: 2026-07-22T09:00:00-04:00
+category: Flights
 breaking: true
 image: "/images/articles/us-lebanon-flights-radar.jpg"
 imageAlt: "Dark Eastern Mediterranean map with a lime radar overlay centered on Lebanon"

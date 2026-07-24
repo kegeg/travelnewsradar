@@ -1,0 +1,51 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import {
+  CATEGORIES,
+  categoryFromSlug,
+  categorySlug,
+  SITE_NAME,
+} from '../../consts';
+
+export function getStaticPaths() {
+  return CATEGORIES.map((category) => ({
+    params: { slug: categorySlug(category) },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const slug = Astro.params.slug!;
+const resolved = categoryFromSlug(slug) ?? category;
+
+const articles = (
+  await getCollection(
+    'articles',
+    ({ data }) => !data.draft && data.category === resolved,
+  )
+).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+---
+
+<BaseLayout
+  title={`${resolved} — ${SITE_NAME}`}
+  description={`${resolved} travel news on ${SITE_NAME}.`}
+>
+  <header class="masthead">
+    <p class="masthead__label">Category</p>
+    <h1 class="masthead__title">{resolved}</h1>
+  </header>
+
+  {
+    articles.length === 0 ? (
+      <p>No {resolved.toLowerCase()} articles yet.</p>
+    ) : (
+      <ol class="story-list story-list--grid">
+        {articles.map((article) => (
+          <StoryCard article={article} variant="card" />
+        ))}
+      </ol>
+    )
+  }
+</BaseLayout>

@@ -2,6 +2,7 @@
 title: "What Canadian wildfire smoke means for US and Canada flights"
 description: "Smoke from Canada’s wildfire season is still disrupting visibility and schedules. Here’s what to check before you fly, and what to do if you’re delayed overnight."
 pubDate: 2026-07-21T10:00:00-04:00
+category: Flights
 breaking: false
 image: "/images/articles/canadian-wildfire-smoke-radar.jpg"
 imageAlt: "Smoky evergreen forest with a lime radar overlay"

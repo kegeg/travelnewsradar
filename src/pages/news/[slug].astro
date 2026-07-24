@@ -5,6 +5,7 @@ import StoryCard from '../../components/StoryCard.astro';
 import {
   AUTHOR,
   calendarDayInSiteTz,
+  categorySlug,
   ORGANIZATION_SAME_AS,
   PUBLISHER_LOGO,
   SITE_NAME,
@@ -30,6 +31,8 @@ const showUpdated =
   Boolean(article.data.updatedDate) &&
   article.data.updatedDate!.valueOf() !== published.valueOf();
 const breakingDay = calendarDayInSiteTz(published);
+const category = article.data.category;
+const categoryHref = `/category/${categorySlug(category)}/`;
 const pageUrl = new URL(`/news/${article.id}/`, SITE_URL).href;
 const ogImage = article.data.image
   ? absUrl(article.data.image)
@@ -132,6 +135,7 @@ const jsonLd = {
     }
     <h1 itemprop="headline">{article.data.title}</h1>
     <div class="article__meta">
+      <a class="badge-category" href={categoryHref}>{category}</a>
       <span>
         By{' '}
         <a href={AUTHOR.url} rel="author" itemprop="author">

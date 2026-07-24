@@ -15,6 +15,14 @@ const articles = defineCollection({
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
     author: z.string().default('Kevin Gagnon'),
+    category: z.enum([
+      'Flights',
+      'Borders',
+      'Health',
+      'Rewards',
+      'Advisories',
+      'Labor',
+    ]),
     breaking: z.boolean().default(false),
     draft: z.boolean().default(false),
     /** If true: do not edit without Kevin’s written approval */

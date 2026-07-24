@@ -4,7 +4,7 @@
   --color-surface: #ffffff;
   --color-muted: #5b6575;
   --color-rule: #d7dce5;
-  --color-radar: #a8f000;
+  --color-radar: #037cfc;
   --color-breaking: #e10600;
   --color-link: #0b3d91;
   --font: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
@@ -14,7 +14,7 @@
   /* Content pages (article/about/author/legal): readable width without empty card sides */
   --max-article: 56rem;
   --space: 1.25rem;
-  --radius: 0.75rem;
+  --radius: 0.5rem;
 }
 
 *,
@@ -131,7 +131,7 @@ li {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.65rem;
+  gap: 0.7rem;
   text-decoration: none;
   color: inherit;
 }
@@ -140,32 +140,30 @@ li {
   flex-shrink: 0;
 }
 
-.wordmark {
-  font-size: 1.2rem;
-  font-weight: 750;
-  letter-spacing: -0.03em;
+.brand__name {
+  font-size: 1.05rem;
+  font-weight: 650;
+  letter-spacing: 0.01em;
   color: var(--color-ink);
-}
-
-.wordmark span {
-  color: var(--color-ink);
-  box-shadow: inset 0 -0.3em 0 var(--color-radar);
+  line-height: 1.15;
 }
 
 .site-nav {
   display: flex;
-  gap: 1rem;
-  font-size: 0.95rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.65rem 0.9rem;
+  font-size: 0.88rem;
 }
 
 .site-nav a {
-  color: var(--color-ink);
+  color: var(--color-muted);
   text-decoration: none;
   font-weight: 600;
 }
 
 .site-nav a:hover {
-  color: var(--color-link);
+  color: var(--color-ink);
 }
 
 .site-main {
@@ -285,7 +283,7 @@ li {
   font: inherit;
   font-size: 0.85rem;
   font-weight: 700;
-  color: var(--color-ink);
+  color: #fff;
   background: var(--color-radar);
   cursor: pointer;
 }
@@ -347,34 +345,46 @@ li {
   text-decoration: none;
 }
 
-.radar-intro {
-  display: flex;
-  align-items: flex-start;
-  gap: 0.75rem;
+.masthead {
   margin-bottom: 1.75rem;
-  max-width: 40rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--color-rule);
 }
 
-.radar-intro__mark {
-  margin-top: 0.15rem;
-  flex-shrink: 0;
-}
-
-.hero-label {
+.masthead__label {
   display: block;
   font-size: 0.8rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--color-muted);
-  margin: 0 0 0.2rem;
+  margin: 0 0 0.25rem;
 }
 
-.radar-intro__sub {
+.masthead__title {
   margin: 0;
-  color: var(--color-muted);
-  font-size: 0.98rem;
-  line-height: 1.45;
+  font-size: clamp(1.5rem, 3vw, 1.85rem);
+  font-weight: 750;
+  letter-spacing: -0.02em;
+  color: var(--color-ink);
+}
+
+.badge-category {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.badge-category:hover {
+  text-decoration: underline;
+}
+
+a.badge-category {
+  color: var(--color-link);
 }
 
 .home-feed {
@@ -802,7 +812,7 @@ li {
 
 .cookie-banner__btn--primary {
   background: var(--color-radar);
-  color: var(--color-ink);
+  color: #fff;
 }
 
 .cookie-banner__btn:hover {

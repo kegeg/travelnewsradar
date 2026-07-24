@@ -2,6 +2,7 @@
 title: "Porter reinstates $40 fuel surcharge on VIPorter reward flights"
 description: "New VIPorter award bookings are back to a $40 fuel surcharge. Cash fares are unchanged, and old award bookings keep their rate."
 pubDate: 2026-07-23T09:00:00-04:00
+category: Rewards
 breaking: false
 image: "/images/articles/porter-viporter-fuel-surcharge-radar.jpg"
 imageAlt: "Dark map of the Toronto waterfront with a Porter-blue radar overlay"

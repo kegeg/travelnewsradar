@@ -2,7 +2,6 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import StoryCard from '../components/StoryCard.astro';
-import RadarMark from '../components/RadarMark.astro';
 import { SITE_NAME, SITE_TAGLINE } from '../consts';
 
 const articles = (
@@ -15,13 +14,10 @@ const [lead, ...rest] = articles;
 <BaseLayout description={`${SITE_TAGLINE}. ${SITE_NAME} covers breaking travel news for travelers.`}>
   <h1 class="sr-only">{SITE_NAME}: {SITE_TAGLINE}</h1>
 
-  <div class="radar-intro">
-    <RadarMark size={22} class="radar-intro__mark" />
-    <div>
-      <p class="hero-label">On the radar</p>
-      <p class="radar-intro__sub">{SITE_TAGLINE}</p>
-    </div>
-  </div>
+  <header class="masthead">
+    <p class="masthead__label">Travel news</p>
+    <p class="masthead__title">Latest</p>
+  </header>
 
   {
     articles.length === 0 ? (

@@ -12,6 +12,7 @@ const href = `/news/${article.id}/`;
 const image = article.data.image;
 const imageAlt = article.data.imageAlt ?? '';
 const breakingDay = calendarDayInSiteTz(article.data.pubDate);
+const category = article.data.category;
 
 function formatDate(date: Date) {
   return date.toLocaleDateString('en-US', {
@@ -41,6 +42,7 @@ function formatDate(date: Date) {
     }
     <div class="story__body">
       <div class="story__meta">
+        <span class="badge-category">{category}</span>
         {
           article.data.breaking && (
             <span

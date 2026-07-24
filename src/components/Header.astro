@@ -1,15 +1,21 @@
 ---
-import RadarMark from './RadarMark.astro';
+import BrandMark from './BrandMark.astro';
+import { CATEGORIES, categorySlug } from '../consts';
 ---
 
 <header class="site-header">
   <div class="site-header__inner">
     <a class="brand" href="/" aria-label="TravelNewsRadar home">
-      <RadarMark size={32} class="brand__mark" />
-      <span class="wordmark">TravelNews<span>Radar</span></span>
+      <BrandMark class="brand__mark" />
+      <span class="brand__name">Travel News Radar</span>
     </a>
     <nav class="site-nav" aria-label="Primary">
       <a href="/">Latest</a>
+      {
+        CATEGORIES.map((category) => (
+          <a href={`/category/${categorySlug(category)}/`}>{category}</a>
+        ))
+      }
     </nav>
   </div>
 </header>

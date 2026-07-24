@@ -2,6 +2,7 @@
 title: "What the Aqaba airport alert means if you're traveling to Jordan"
 description: "US Embassy Amman warned of a threat at Aqaba’s airport and seaport. Jordan says both are open. Here’s what travelers should do now."
 pubDate: 2026-07-19T20:30:00-04:00
+category: Advisories
 breaking: true
 locked: true
 image: "/images/articles/aqaba-balcony.jpg"
