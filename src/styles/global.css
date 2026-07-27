@@ -698,6 +698,7 @@ a.badge-category {
 
 .article__body table {
   width: 100%;
+  table-layout: fixed;
   border-collapse: collapse;
   margin: 0 0 1.25rem;
   font-size: 0.95rem;
@@ -718,8 +719,19 @@ a.badge-category {
   font-weight: 700;
 }
 
-.article__body td {
+/* Two-column comparisons: equal halves */
+.article__body table tr:first-child th:first-child:nth-last-child(2),
+.article__body table tr:first-child th:first-child:nth-last-child(2) ~ th {
   width: 50%;
+}
+
+/* Three-column: label + two equal value columns */
+.article__body table tr:first-child th:first-child:nth-last-child(3) {
+  width: 40%;
+}
+
+.article__body table tr:first-child th:first-child:nth-last-child(3) ~ th {
+  width: 30%;
 }
 
 .back-link {
