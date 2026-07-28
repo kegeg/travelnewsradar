@@ -1,5 +1,5 @@
 ---
-title: "What Canada's new Ebola border rules mean for travelers"
+title: "Canada’s new Ebola border rules for DRC travelers"
 description: "Canada now bars foreign nationals who were in the DRC in the past 21 days. Here's how that stacks up with US rules, and what it means for trips that touch Uganda or South Sudan."
 pubDate: 2026-07-20T12:00:00-04:00
 category: Health
@@ -51,7 +51,7 @@ Current US and Canada end dates are in August, which is before many late-year tr
 **Flexible routing:**  
 If US or Canadian connections are optional, also check for Europe, Middle East, and African hubs as well. The “best” ticket on points or cash is useless if someone on the booking cannot enter under their nationality.
 
-## On the road: why we’re watching this for a South Sudan trip
+## Why we’re watching this for a South Sudan trip
 
 Caroline and I are planning a **South Sudan** trip later this year, with a little time in **Uganda** afterward. Nothing is booked yet other than the deposit for the trip. We are holding the long-haul tickets and will decide closer to departure. This is why these border updates matter to us even when we are not going specifically to the DRC.
 

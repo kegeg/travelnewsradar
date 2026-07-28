@@ -1,5 +1,5 @@
 ---
-title: "What the Aqaba airport alert means if you're traveling to Jordan"
+title: "Aqaba airport alert: US Embassy threat warning vs Jordan denial"
 description: "US Embassy Amman warned of a threat at Aqaba’s airport and seaport. Jordan says both are open. Here’s what travelers should do now."
 pubDate: 2026-07-19T20:30:00-04:00
 category: Advisories
@@ -39,10 +39,10 @@ On July 17th, 2026, [US Central Command](https://www.centcom.mil/MEDIA/PUBLIC-RE
 ## What to do if you have Jordan plans
 
 **Already booked through AMM (Queen Alia) or AQJ:**  
-Keep the booking, monitor the airline, and re-check in the days before travel. Amman and Aqaba are not the same situation. A threat message aimed at Aqaba’s airport/port is not the same as a nationwide “Jordan is closed” claim. Monitor general airspace for closures. That was the main concern when I was there earlier in this conflict.
+Keep the booking, monitor the airline, and re-check in the days before travel. Amman and Aqaba are different situations. A threat message aimed at Aqaba’s airport/port does not close the whole country. Monitor general airspace for closures. That was the main concern when I was there earlier in this conflict.
 
 **Heading to Aqaba for diving or the coast:**  
-At this level of alert noise, things are very likely running. Still worth staying in touch with your dive shop or hotel so they know you have not cancelled on them. Tourism businesses have been dealing with a lot of drop-offs, and a short message helps them plan. If you are especially anxious, ask what they are seeing on the ground, but do not assume everything is shut because of one contested alert.
+At this level of alert noise, things are very likely running. Still worth staying in touch with your dive shop or hotel so they know you have not canceled on them. Tourism businesses have been dealing with a lot of drop-offs, and a short message helps them plan. If you are especially anxious, ask what they are seeing on the ground, but do not assume everything is shut because of one contested alert.
 
 **Flexible dates:**  
 If your trip is optional and the alerts escalate beyond a contested one-day message, it can make sense to wait. What we can say from experience is in the section below, and that trip was before the July casualties, so still re-check today’s facts.
@@ -51,7 +51,7 @@ If your trip is optional and the alerts escalate beyond a contested one-day mess
 
 I was in Jordan from **February 21st to April 2nd, 2026** (Canadian passport; my partner is American). We flew in and out of **Amman (AMM)**. We spent **March 22nd to March 25th in Aqaba**, including a Red Sea dive on March 24th, after Petra and Wadi Rum, plus more time in Amman and at the Dead Sea.
 
-The war started while we were there. We heard sirens often enough, and a few times we could see interceptions overhead. We still did not feel unsafe as tourists. Most of our different guides’ take was basically: Jordan stays open for visitors, and people here are used to living next to regional crises, but rarely get involved. Locals depending on tourism were mostly sad about cancelled trips and empty hotels. They were still happy to see the tourists who showed up.
+The war started while we were there. We heard sirens often enough, and a few times we could see interceptions overhead. We still did not feel unsafe as tourists. Most of our different guides’ take was basically: Jordan stays open for visitors, and people here are used to living next to regional crises, but rarely get involved. Locals depending on tourism were mostly sad about canceled trips and empty hotels. They were still happy to see the tourists who showed up.
 
 The scary version of Jordan from abroad did not match what we saw day to day. We did not run into a bunch of new checkpoints. We got embassy alerts, but they were often late or not that useful next to local news. We had been told to avoid US base areas. We still drove past one on a tour to see some castles in the east and did not notice anything extra.
 

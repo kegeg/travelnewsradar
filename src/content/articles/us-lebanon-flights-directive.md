@@ -18,9 +18,9 @@ Direct US passenger service on that corridor has been blocked since 1985, after 
 | --- | --- |
 | White House directing US carriers to fly to Lebanon again | No airline has announced Beirut routes |
 | FAA working with partners to implement the directive | Beirut still needs a US security review first |
-| Political door to direct US-carrier service is open | Still connecting via Europe, Turkey, or the Gulf |
+| White House wants US-carrier service restored | Still connecting via Europe, Turkey, or the Gulf |
 
-Travelers could already buy tickets to Lebanon and fly in on connecting itineraries. The old restriction was mainly about **US carriers operating direct service**, not about Americans being unable to reach Beirut at all.
+Travelers could already buy tickets to Lebanon and fly in on connecting itineraries. The old restriction blocked **US carriers from operating direct service**; Americans could still reach Beirut on connecting itineraries.
 
 ## What this means for travelers
 
@@ -28,7 +28,7 @@ Do not cancel a connecting ticket, or rebuild a summer itinerary around US-airli
 
 If you are watching this because you care about Lebanon travel later:
 
-1. Wait for an **airline schedule filing**, not another political announcement.
+1. Wait for an **airline schedule filing** before treating direct flights as bookable.
 2. Keep reading the **government advisories** for Lebanon travels. Those pages move slower than Truth Social posts, and that is normal. This news isn't about a downgrade advisory, only direct flight.
 3. Treat the directive as a **forward signal**: Washington is trying to reopen the aviation relationship. That can matter for future options even while today’s risk pages stay hard.
 

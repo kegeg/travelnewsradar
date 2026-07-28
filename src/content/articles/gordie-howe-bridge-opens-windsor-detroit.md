@@ -13,7 +13,7 @@ The [Gordie Howe International Bridge](https://gordiehoweinternationalbridge.com
 
 ## What opened, and how you get there
 
-Canada and Michigan [set the July 27th opening](https://www.canada.ca/en/housing-infrastructure-communities/news/2026/07/the-gordie-howe-international-bridge-will-open-on-july-27th-strengthening-trade-connectivity-and-economic-development.html) after agreeing on toll governance. The crossing is a six-lane cable-stayed bridge with a main span of about **853 metres** (about **2,800 feet**), tying into **Highway 401** on the Canadian side and **Interstate 75** on the US side.
+Canada and Michigan [set the July 27th opening](https://www.canada.ca/en/housing-infrastructure-communities/news/2026/07/the-gordie-howe-international-bridge-will-open-on-july-27th-strengthening-trade-connectivity-and-economic-development.html) after agreeing on toll governance. The crossing is a six-lane cable-stayed bridge with a main span of about **853 meters** (about **2,800 feet**), tying into **Highway 401** on the Canadian side and **Interstate 75** on the US side.
 
 The ports of entry are built for volume. The Canadian side has **24** primary inspection lanes and **16** toll booths; US-side coverage of the opening puts primary inspection at **36** lanes. The bridge itself is meant to run **24/7** once open.
 
@@ -23,7 +23,7 @@ The multi-use path for pedestrians and cyclists does **not** open with cars. The
 
 Tolls for travel in **both** directions are collected on the **Canadian** side. You do not need a Breakaway account to cross. Cash, debit/credit, and digital wallets work at the toll plaza; cash is for attended lanes.
 
-Official [toll rates](https://gordiehoweinternationalbridge.com/) for a typical personal vehicle under **2.3 metres / 7.5 feet** high:
+Official [toll rates](https://gordiehoweinternationalbridge.com/) for a typical personal vehicle under **2.3 meters / 7.5 feet** high:
 
 | Payment | CAD | USD |
 | --- | --- | --- |

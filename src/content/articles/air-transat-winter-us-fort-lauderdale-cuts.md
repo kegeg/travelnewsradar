@@ -17,8 +17,8 @@ On **April 17th, 2026**, [Air Transat’s winter program announcement](https://t
 
 | Route | April announcement | Current winter filings |
 | --- | --- | --- |
-| Montreal (YUL)–Fort Lauderdale (FLL) | Up to **7** weekly from **November 16th, 2026** | **Cancelled** |
-| Halifax (YHZ)–Fort Lauderdale (FLL) | **1** weekly from **December 16th, 2026** | **Cancelled** |
+| Montreal (YUL)–Fort Lauderdale (FLL) | Up to **7** weekly from **November 16th, 2026** | **Canceled** |
+| Halifax (YHZ)–Fort Lauderdale (FLL) | **1** weekly from **December 16th, 2026** | **Canceled** |
 | Quebec City (YQB)–Fort Lauderdale (FLL) | **3** weekly from mid-November 2026 | Still planned, **3** weekly from **December 15th, 2026** |
 
 Industry schedule trackers published the filing update on **July 21st, 2026**. Air Transat has not posted a matching media release explaining the change. Treat the filings as the working timetable until the airline updates booking tools or publishes a correction.
@@ -52,7 +52,7 @@ Cruise passengers using Fort Lauderdale as a port should recheck air plans early
 1. Search your exact dates on [airtransat.com](https://www.airtransat.com/) and confirm whether any Florida result is operated by Air Transat or Porter.
 2. If Quebec City–Fort Lauderdale works for you, that is the operated TS US route still in the winter filings.
 3. Compare Air Canada, Porter, WestJet, and US carriers for Montreal and Halifax. Price the full door-to-door time, not just the base fare.
-4. If you already hold a booking that mentioned Montreal or Halifax Fort Lauderdale on Transat, open the reservation and contact Air Transat or your agent. Schedule filings are not the same thing as an automatic rebooking email.
+4. If you already hold a booking that mentioned Montreal or Halifax Fort Lauderdale on Transat, open the reservation and contact Air Transat or your agent. Schedule filings do not automatically rebook you or trigger an airline email.
 5. Watch for a Transat update. Filings can move again before winter sales fully settle.
 
 ## Bottom line

@@ -11,6 +11,8 @@ imageAlt: "WestJet aircraft on the tarmac (photo: David Syphers / Unsplash)"
 
 WestJet has posted a [potential labor disruption advisory](https://www.westjet.com/en-ca/get-travel-ready/advisories) for guests traveling **July 30th through August 4th, 2026**, with a one-time change or cancellation and **no change/cancel fee**. The window sits on top of a strong cabin-crew strike mandate: CUPE Local 8125 says flight attendants could legally walk out as early as **August 2nd** if talks fail. A strike is not automatic.
 
+Europe has a parallel watch item this week: [easyJet France cabin crew filed a summer strike notice](/news/easyjet-france-cabin-crew-strike-notice/) with no firm walkout dates yet.
+
 ## What WestJet is offering to travelers
 
 On July 23rd, 2026, WestJet listed an all-airports advisory for travel between July 30th and August 4th while it stays in talks with the union representing cabin crew. Eligible guests get flexibility to adjust plans, including a **one-time** change or cancellation with no fee. WestJet points people to [Manage Trips](https://www.westjet.com/en-ca/manage) and its flexible travel options.
@@ -33,7 +35,7 @@ Vacation packages are separate. If you booked through WestJet Vacations, Sunwing
 
 [CUPE](https://cupe.ca/news/westjet-cabin-crew-overwhelmingly-vote-yes-strike-action) says about **4,400** WestJet flight attendants voted after months at the table. [The WestJet Component](https://wjcomponent.ca/bargaining-blog/strike-vote-results) reported **97.3%** turnout and **99.4%** yes for a strike mandate on July 15th, 2026. CUPE’s public note puts the earliest possible strike at **August 2nd, 2026**, after the federal **21-day cooling-off** period.
 
-That mandate is a bargaining tool, not a walkout notice. The Component’s own cooling-off update says neither strike nor lockout is legal during cooling-off, and that a strike still needs the usual steps, including **advance notice (typically 72 hours)**. WestJet’s advisory language still frames the situation as negotiations in progress and optional guest flexibility, not a grounded airline.
+That mandate strengthens the union’s hand at the table. The Component’s own cooling-off update says neither strike nor lockout is legal during cooling-off, and that a walkout still needs the usual next steps, including **advance notice (typically 72 hours)**. WestJet’s advisory language still frames the situation as negotiations in progress and optional guest flexibility while flights keep operating.
 
 A cabin-crew stoppage would hit mainline flying hard if it happens. Until notice is served and operations are cut, treat day-of flights as normal unless WestJet says otherwise.
 

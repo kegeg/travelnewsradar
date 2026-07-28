@@ -1,5 +1,5 @@
 ---
-title: "What Canadian wildfire smoke means for US and Canada flights"
+title: "Wildfire smoke delays flights across US and Canada"
 description: "Smoke from Canada’s wildfire season is still disrupting visibility and schedules. Here’s what to check before you fly, and what to do if you’re delayed overnight."
 pubDate: 2026-07-21T10:00:00-04:00
 category: Flights
@@ -38,6 +38,8 @@ That last point is important and is one a lot of travelers skip unknowingly. If 
 For more detail, see [the most important things to know before a disruption](https://flytrippers.com/most-important-things-related-to-canceled-and-delayed-flights/) and [what to do when the delay is already happening](https://flytrippers.com/6-things-to-do-when-your-flight-is-canceled-or-delayed/). The short version: always book your flights on a card with delay coverage, keep receipts, and do not assume the airline hotel voucher is your only option.
 
 Also check for a waiver before you pay to make changes to your booking. Waivers are temporary airline policies that drop change fees (and sometimes fare differences) so people can move off overloaded days. They are common in disruption weeks and easy to miss if you only look at the app’s change-fee quote.
+
+If your disruption is labor-related instead of smoke, the same check-your-booking habit applies. See [WestJet’s free change-or-cancel window](/news/westjet-free-change-cancel-cabin-crew-strike/) and the [easyJet France strike notice](/news/easyjet-france-cabin-crew-strike-notice/).
 
 ## Why delay insurance is worth caring about
 
