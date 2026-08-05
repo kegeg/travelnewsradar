@@ -9,7 +9,7 @@ image: "/images/articles/barcelona-el-prat-groundforce-strike.jpg"
 imageAlt: "Aircraft parked at Barcelona-El Prat Airport at sunset (photo: Martí Sierra / Unsplash)"
 ---
 
-Another Spain ground-handling story after [Palma’s Swissport strike days](/news/palma-airport-swissport-strikes/). At **Josep Tarradellas Barcelona-El Prat (BCN)**, the CGT union has called an **indefinite strike** for **Groundforce** staff starting at **00:00 on August 4th, 2026**. Groundforce is a ground-handling company. It runs check-in, boarding, bags, ramp work, and flight coordination for the airlines that hire it. The airport stays open, and not every carrier at El Prat uses Groundforce.
+Another Spain ground-handling story after [Palma’s Swissport strike days](/news/palma-airport-swissport-strikes/). At **Josep Tarradellas Barcelona-El Prat (BCN)**, the CGT union has called an **indefinite strike** for **Groundforce** staff starting at **00:00 on August 4th, 2026**. Groundforce is a ground-handling company that runs check-in, boarding, bags, ramp work, and flight coordination for the airlines that hire it. The airport stays open, and not every carrier at El Prat uses Groundforce.
 
 Spain’s Transport Ministry has already set **minimum services** for Groundforce-handled flights. That protects handling for a substantial share of scheduled flights, but it does not identify which individual flights will operate. Check-in queues, boarding delays, and bag problems are still the first things travelers usually feel.
 
@@ -21,7 +21,7 @@ The strike has **no fixed end date**. It continues until there is a deal or the 
 
 CGT says the dispute is about workplace safety, staffing, fatigue, and health-and-safety conditions on the ramp and in bags and passenger handling. That is the union’s account of why it called the walkout.
 
-## Minimum services are not a cancellation forecast
+## What minimum services cover
 
 The ministry resolution sets protected shares of Groundforce-served operations by route type for August and September 2026:
 
@@ -37,7 +37,7 @@ Separately, the resolution protects **100%** of emergency flights and certain In
 
 ## Who is most affected
 
-[Aena’s baggage directory for El Prat](https://www.aena.es/en/josep-tarradellas-barcelona-el-prat/airport-services/categories-and-terminals/baggage.html) is a current baggage-services assignment list. It shows which airlines Groundforce currently assists for luggage. The list is long. For North American and common Europe-bound travelers, names that matter include **Air Europa, Air Transat, Delta, United, WestJet, Lufthansa, Swiss, Austrian, Brussels Airlines, Air France, KLM, ITA, Turkish Airlines, Qatar Airways, Etihad, Finnair, SAS, Jet2, Condor, and TUI Fly**.
+[Aena’s baggage directory for El Prat](https://www.aena.es/en/josep-tarradellas-barcelona-el-prat/airport-services/categories-and-terminals/baggage.html) is a current baggage-services assignment list. It shows which airlines Groundforce currently assists for luggage. For North American and common Europe-bound travelers, names that matter include **Air Europa, Air Transat, Delta, United, WestJet, Lufthansa, Swiss, Austrian, Brussels Airlines, Air France, KLM, ITA, Turkish Airlines, Qatar Airways, Etihad, Finnair, SAS, Jet2, Condor, and TUI Fly**.
 
 If your ticket is on one of those carriers into or out of Barcelona from August 4th onward, treat bag drop, boarding, and reclaim as higher-risk, even when the flight still shows as operating.
 
@@ -45,18 +45,18 @@ Other handlers cover other airlines at the same airport. Aena currently lists **
 
 ## What this means for travelers
 
-If you fly a Groundforce-handled airline at BCN after August 4th, leave buffer for bags and boarding. If you have a tight same-day connection, leave extra time or change it only when a low-cost option makes sense. Travel light when your fare allows it. Bag systems usually feel ground-handling pressure first.
+If you fly a Groundforce-handled airline at BCN after August 4th, leave buffer for bags and boarding. If you are still booking a trip with a tight same-day connection through El Prat, leave more buffer when you can. Bag systems usually feel ground-handling pressure first.
 
 If your airline uses another handler, this strike does not put your carrier in the direct line of fire. Still watch day-of status in peak August, and confirm your handler assignment for your exact flights.
 
-We’ll be through El Prat mid-August after Mallorca. Our American Airlines long-haul uses Menzies there, not Groundforce, but we’re still watching day-of status while the airport is under this pressure.
+I’ll be through El Prat mid-August after Mallorca. I’m flying into Barcelona from Palma on Air Europa, which is on Groundforce, but I have a full night there if something slips. My American Airlines long-haul out uses Menzies, not Groundforce. Still watching day-of status while the airport is under this pressure.
 
 ## What to do now
 
 1. Check whether **your airline** is on Groundforce at Barcelona, then match that to travel from August 4th onward. Confirm the exact flight with the airline, since Aena’s page is a baggage-services list that can change.
 2. Complete online check-in when offered, and prefer cabin bags if your fare allows it.
 3. Turn on airline alerts and check flight status before you leave for the airport.
-4. If you have a tight same-day connection and can adjust it cheaply, leave more buffer. Do not rush into an expensive rebook before your airline shows a delay or cancellation.
+4. If you have a tight same-day connection and can adjust it cheaply, you could change it to leave more buffer if you want extra time.
 5. If your flight is delayed or canceled, use the airline’s care, rebooking, and refund path first. Ask what care and rerouting they will provide for your exact disruption; do not assume a cash payout.
 
 ## Bottom line
