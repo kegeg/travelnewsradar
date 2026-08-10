@@ -11,8 +11,6 @@ imageAlt: "Airplane on the tarmac at Dubai International Airport at sunset (phot
 
 Air Canada has pushed the restart of its Dubai (DXB) and Tel Aviv (TLV) flights again. On its [Middle East travel update](https://www.aircanada.com/ca/en/aco/home/book/travel-news-and-updates/2026/middle-east-travel.html) dated August 4th, 2026, the airline says flights to and from both cities remain suspended and canceled until mid-January 2027. The previous window on that same page pointed to late October.
 
-Related TNR notes: [US-Lebanon direct flights](/news/us-lebanon-flights-directive/) and the [Aqaba airport alert](/news/aqaba-airport-alert-jordan-travel/).
-
 ## What Air Canada changed
 
 Due to the situation in the Middle East, Dubai and Tel Aviv service continues to be suspended, and both routes stay canceled until mid-January 2027.
