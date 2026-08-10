@@ -1,7 +1,7 @@
 ---
 title: "Air Canada extends Dubai and Tel Aviv flight suspensions into 2027"
 description: "Air Canada pushed its Dubai and Tel Aviv restart from late October into mid-January 2027. Here’s what ticketed travelers should check on the airline’s live advisory."
-pubDate: 2026-08-10T14:00:00-04:00
+pubDate: 2026-08-10T09:03:47-04:00
 category: Flights
 breaking: false
 draft: false
