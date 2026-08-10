@@ -34,20 +34,10 @@ Greater New York still has other Canada options on different airports and airlin
 
 If you want a **nonstop between JFK and Calgary or Québec City** in August, September, or early October 2026, American now sells that itinerary. Nothing else about Canada entry rules or airport process changes because of this schedule add.
 
-This does **not** create winter service. Do not assume the flights continue after the currently scheduled early or mid-October ends unless American publishes a later season.
-
 JFK connections matter more than the Canada city alone. American’s pitch is onward access across the United States and to Europe through JFK. That only helps if your connecting times and terminals work. Price the full trip, not just the new nonstop segment.
 
 Preclearance also differs by city. [Calgary has US CBP preclearance](https://www.cbp.gov/travel/preclearance), so YYC–JFK passengers normally clear US entry before departure and can connect more like a domestic arrival. Québec City does not have US preclearance. YQB–JFK passengers clear US entry at JFK, so leave more time for immigration and Terminal 8 before any onward flight.
 
-I’ve flown American into Québec City through Chicago before. When New York is the point of the trip, a JFK nonstop is the cleaner AA option for the short season it runs.
-
-## What to do
-
-1. Search your dates on [aa.com](https://www.aa.com/) for YQB–JFK or YYC–JFK, confirm the last currently scheduled flight in the season before you lock hotels, and check AAdvantage award space for August and September if you are redeeming miles.
-2. If you need New York but not specifically JFK, compare LaGuardia (including American’s Saturday Calgary flight), Newark, WestJet’s JFK–Calgary nonstop, and other carriers on total door-to-door time.
-3. If you are connecting beyond JFK, check minimum connection time and Terminal 8 logistics. From YQB, budget time to clear US entry at JFK. From YYC, you should normally already be precleared.
-
 ## Bottom line
 
-American’s new JFK–Calgary and JFK–Québec City flights are real, bookable seasonal nonstops, currently scheduled through October 4th and October 12th, 2026. Use them if the airport pair fits your trip. Do not plan winter travel around them unless the schedule later expands.
+American’s new JFK–Calgary and JFK–Québec City flights are real, bookable seasonal nonstops, currently scheduled through October 4th and October 12th, 2026. Use them if the airport pair fits your trip.

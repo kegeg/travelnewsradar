@@ -25,11 +25,9 @@ About **4,400** mainline flight attendants are covered. Ground pay under the fli
 
 ## What this means for travelers
 
-The wage and premium details do not change your ticket rules by themselves. They matter because they show what cabin crew are being asked to accept, and because the deal is still **tentative**.
+The deal is still **tentative** until members vote. If they ratify, the labor dispute that grounded mainline WestJet over the August long weekend is closed for this contract round. If they reject it, strike or lockout risk can return later. The ratification vote is what travelers should watch next.
 
-If members ratify, the labor dispute that grounded mainline WestJet over the August long weekend is closed for this contract round. If they reject it, strike or lockout risk can return later. The ratification vote is what travelers should watch next.
-
-WestJet’s [guest updates](https://www.westjet.com/en-ca/guest-updates) page still covers the cabin-crew disruption recovery. It says some flights may still be affected while operations rebuild, that guests should only go to the airport with a confirmed flight, and that flights currently bookable on westjet.com are expected to operate as scheduled. For travel **on or before August 6th, 2026**, eligible WestJet, WestJet Vacations, Sunwing, and Vacances WestJet Québec guests can still make a **one-time** change or cancellation at no additional cost if that window is still posted when you check.
+WestJet’s [guest updates](https://www.westjet.com/en-ca/guest-updates) page still covers the cabin-crew disruption recovery. It says some flights may still be affected while operations rebuild, that guests should only go to the airport with a confirmed flight, and that flights currently bookable on westjet.com are expected to operate as scheduled. For travel **on or before August 6th, 2026**, eligible WestJet, WestJet Vacations, Sunwing, and Vacances WestJet Québec guests can still make a **one-time** change or cancellation at no additional cost if that window still exists when you check.
 
 WestJet’s guest updates also say Encore-operated Dash 8-400 segments were outside the cabin-crew dispute. Connections onto mainline Boeing 737 or 787 flying can still be affected during recovery, so check the full itinerary.
 
@@ -42,4 +40,4 @@ WestJet’s guest updates also say Encore-operated Dash 8-400 segments were outs
 
 ## Bottom line
 
-CUPE says the WestJet tentative cabin-crew deal includes more than **18%** in wage hikes over three years and a new duty period premium for ground work. Members still need to ratify it within about **30 days**. For travelers, that vote is the remaining labor risk. Check day-of status if you are flying soon, and use any remaining August 6th flexibility while it is still posted.
+CUPE says the WestJet tentative cabin-crew deal includes more than **18%** in wage hikes over three years and a new duty period premium for ground work. Members still need to ratify it within about **30 days**. For travelers, that vote is the remaining labor risk. Check day-of status if you are flying soon, and use any remaining August 6th flexibility while that window still exists.

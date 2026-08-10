@@ -31,7 +31,7 @@ WestJet’s usual [advisory flexibility rules](https://www.westjet.com/en-ca/man
 
 ## What this means for travelers
 
-A deal ending the walkout does not mean every booking for the next few days is safe. WestJet says restoring the full network will take **several days**. That is the practical problem for anyone flying mainline WestJet through about August 6th: aircraft and crews still have to get back where the schedule needs them.
+The walkout is over, but bookings for the next few days can still get hit. WestJet says restoring the full network will take **several days**. That is the practical problem for anyone flying mainline WestJet through about August 6th: aircraft and crews still have to get back where the schedule needs them.
 
 If your itinerary shows **Operated by WestJet Encore** or a De Havilland Dash 8-400, that segment was outside the cabin-crew dispute. WestJet still warns that connections onto mainline Boeing 737 or 787 flights can be affected, so check the full itinerary, not only the first flight number.
 
@@ -40,7 +40,7 @@ If you are already away from home and a labor-related disruption hits your trip,
 ## What to do now
 
 1. Check [flight status](https://www.westjet.com/en-ca/flights/status) and Manage Trips before you leave for the airport. Only go if the flight is confirmed.
-2. If you are traveling on or before August 6th and your plans can move, use the one-time free change or cancel while it is still posted.
+2. If you are traveling on or before August 6th and your plans can move, use the one-time free change or cancel while that window still exists.
 3. Watch email and SMS tied to the reservation. Agent bookings should also check with whoever sold the ticket.
 4. If WestJet cancels your flight, take the rebooking or refund path in Manage Trips first. Vacation packages contact the vacation provider.
 5. If you are stranded away from home, keep itemized receipts and use WestJet’s expense process before the September 30th deadline.

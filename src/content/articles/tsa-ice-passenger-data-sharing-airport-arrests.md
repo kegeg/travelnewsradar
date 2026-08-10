@@ -1,6 +1,6 @@
 ---
 title: "TSA and ICE passenger-data sharing deal is now public"
-description: "A FOIA-released May 2025 TSA-ICE agreement formalizes passenger-data sharing tied to Secure Flight. Here is what changes for most flyers, and who faces real airport arrest risk."
+description: "A FOIA-released May 2025 TSA-ICE agreement formalizes passenger-data sharing tied to Secure Flight. For most travelers with clear status, the checkpoint process does not change."
 pubDate: 2026-08-07T07:30:00-04:00
 category: Borders
 breaking: false
@@ -11,7 +11,7 @@ imageAlt: "Travelers moving through a multi-lane TSA security checkpoint in a br
 
 A [May 29th, 2025 Memorandum of Agreement](https://www.documentcloud.org/documents/28519762-ice-tsa-data-sharing-moa) between the Transportation Security Administration and U.S. Immigration and Customs Enforcement is now public after a FOIA lawsuit. It sets rules for sharing passenger information between the two DHS agencies. For most US and Canadian leisure travelers with clear status, the checkpoint process itself does not change. For people with unresolved immigration status, reporting has described ICE using that Secure Flight booking data to find them at US airports, including on domestic flights.
 
-The news peg is the document release, not a brand-new screening rule. ICE FOIA records show the agreement was produced to American Oversight on **July 23rd, 2026**.
+What’s new is the public document, not a new checkpoint screening rule. ICE FOIA records show the agreement was produced to American Oversight on **July 23rd, 2026**.
 
 ## What the TSA-ICE agreement says
 
@@ -21,7 +21,7 @@ On the passenger side, the released text states that **TSA intends to share data
 
 TSA cites the [Secure Flight Final Rule](https://www.tsa.gov/travel/security-screening) (49 C.F.R. part 1560) and DHS internal information-sharing policy as authority. The agreement stays in force until either side terminates it in writing, and it is supposed to be reviewed every five years from the signature date.
 
-This is separate from [TSA Gold+](/news/tsa-gold-plus-private-screening-three-airports/), which is about private checkpoint staffing and equipment at specific airports. Gold+ does not rewrite this ICE data path.
+This is separate from [TSA Gold+](/news/tsa-gold-plus-private-screening-three-airports/), which is about private checkpoint staffing and equipment at specific airports.
 
 ## How Secure Flight fits in
 
@@ -35,19 +35,13 @@ Exact arrest tallies tied to TSA leads are not in a traveler-facing DHS dashboar
 
 For **US citizens, Canadian citizens, and other travelers with clear lawful status**, nothing material should change for the trip from this MOA alone. You still give the same Secure Flight biographic details you already give when you book. The MOA does not add a new public checkpoint step, a new fee, or a new boarding-pass rule for that group.
 
-For **people with final removal orders, people ICE considers to have overstayed their authorized stay, or other cases where current status is unresolved**, the risk is real. Valid temporary status is a different category. Pending applications are case-specific. Reporting has described booked US flights, including domestic hops, helping ICE locate travelers at airports, with arrests at check-in areas and near gates, sometimes by plainclothes officers. The public MOA confirms the sharing framework, but the redacted appendices do not spell out the exact fields, matching process, or outcome for every traveler. For case-specific advice, talk to immigration counsel.
-
-Long-term travelers and nomads face the same split. Status, pending filings, and removal history matter more than how often you fly.
-
-If one traveler on a shared booking is detained, companions can still lose the itinerary even when they are not the people ICE is seeking. A shared booking does not guarantee the trip continues.
+If one traveler on a shared booking is detained, companions can still lose the itinerary even when ICE was not looking for them.
 
 ## What to do
 
 1. If your status is clear and your documents match the booking name, keep the same airport buffer you already use. No special rebooking step is required by this MOA alone.
-2. If your immigration status is unresolved or you have a removal order, talk to an immigration lawyer before you buy or keep a US flight, including domestic segments.
-3. Make sure the name, date of birth, and sex on the reservation match the travel document you will present. Secure Flight mismatches create screening friction even when immigration is not the issue.
-4. Do not treat viral airport videos as a complete map of who is being stopped. Patterns change, and public clips are not a substitute for case advice.
+2. Make sure the name, date of birth, and sex on the reservation match the travel document you will present. Secure Flight mismatches create screening friction even when immigration is not the issue.
 
 ## Bottom line
 
-TSA and ICE have operated under a signed May 2025 data-sharing agreement that is now public. Most leisure travelers with clear status should expect the same Secure Flight booking details and the same checkpoint routine from this MOA alone. Travelers who need to treat US airport travel differently are those whose immigration files already make them of interest to ICE.
+TSA and ICE have operated under a signed May 2025 data-sharing agreement that is now public. Most leisure travelers with clear status should expect the same Secure Flight booking details and the same checkpoint routine from this MOA alone.
