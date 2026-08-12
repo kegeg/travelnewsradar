@@ -4,7 +4,7 @@ import { calendarDayInSiteTz, SITE_TZ } from '../consts';
 
 interface Props {
   article: CollectionEntry<'articles'>;
-  variant?: 'lead' | 'card';
+  variant?: 'lead' | 'card' | 'compact';
 }
 
 const { article, variant = 'card' } = Astro.props;
@@ -60,7 +60,11 @@ function formatDate(date: Date) {
         </time>
       </div>
       <h2 class="story__title">{article.data.title}</h2>
-      <p class="story__dek">{article.data.description}</p>
+      {
+        variant !== 'compact' && (
+          <p class="story__dek">{article.data.description}</p>
+        )
+      }
     </div>
   </a>
 </li>
