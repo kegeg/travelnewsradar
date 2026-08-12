@@ -29,8 +29,8 @@ Do not cancel a connecting ticket, or rebuild a summer itinerary around US-airli
 If you are watching this because you care about Lebanon travel later:
 
 1. Wait for an **airline schedule filing** before treating direct flights as bookable.
-2. Keep reading the **government advisories** for Lebanon travels. Those pages move slower than Truth Social posts, and that is normal. This news isn't about a downgrade advisory, only direct flight.
-3. Treat the directive as a **forward signal**: Washington is trying to reopen the aviation relationship. That can matter for future options even while today’s risk pages stay hard.
+2. Keep reading the **government advisories** for Lebanon travel. Those pages move slower than Truth Social posts, and that is normal. This news is about direct air service, not an advisory downgrade.
+3. Washington is trying to reopen the aviation relationship. That can matter for future options even while today’s risk pages stay hard.
 
 More carrier options in a market usually help travelers over time (schedules, competition, pricing pressure). That should be the useful long-term read for that news.
 

@@ -11,7 +11,7 @@ imageAlt: "Airplane wing and sunset cityscape seen through a passenger window (p
 
 Italy has [temporarily reintroduced internal border controls](https://home-affairs.ec.europa.eu/policies/schengen-borders-and-visa/schengen-area/temporary-reintroduction-border-control_en) on **air and sea arrivals from Spain**, starting **August 1st, 2026**. The measure is aimed mainly at **third-country nationals** (including US and Canadian passport holders). EU citizens, including Spanish and Italian travelers, are not supposed to face extra paperwork on those hops. Flights and ferries are still running.
 
-This sits beside the wider summer border story around [EU Entry/Exit System queues](/news/eu-ees-border-queues/). EES is an **external** Schengen border system. Italy’s Spain checks are an **internal** Schengen control on a specific route set.
+It pairs with the wider summer border story around [EU Entry/Exit System queues](/news/eu-ees-border-queues/). EES is an **external** Schengen border system. Italy’s Spain checks are an **internal** Schengen control on a specific route set.
 
 ## What Italy announced
 
@@ -44,5 +44,7 @@ If you are already inside Schengen and only leaving Europe later from Spain, the
 3. Do not cancel a Spain–Italy ticket solely because of this headline unless your airline or ferry operator tells you the sailing changed. The announced change is border checks, not a route shutdown.
 4. Watch airline and airport notices the day you fly. Summer hubs are already crowded; an extra selective check can slow the process of leaving the airport even when most passengers are waved through.
 5. If your trip only uses other Schengen pairs, or only Italy-to-Spain, this specific measure does not apply as described.
+
+## Bottom line
 
 Italy’s Spain air and sea controls are live from August 1st for a stated one-month window. Non-EU travelers on those arrivals should plan for possible passport checks; EU travelers are told the paperwork load does not change.

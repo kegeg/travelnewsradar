@@ -33,13 +33,13 @@ Same things as when there are weather issues, or other disruptions:
 - Search your own rebooking options instead of waiting for the first automatic offer. Make the customer service life easy and it's a lot more likely you'll get what you want.
 - Before you pay out of pocket for a hotel or meals, know whether **flight delay insurance** on the card that paid for the ticket covers you.
 
-That last point is important and is one a lot of travelers skip unknowingly. If you paid for the flight with a credit card that includes flight delay insurance (true for most travel credit cards in both Canada and the US), you can often get hotel and meal costs reimbursed after a long enough delay, and that can still apply when the cause is weather or smoke. Thresholds and caps vary by card, so check your benefits guide once, before you need it.
+That last point is one a lot of travelers skip without realizing it. If you paid for the flight with a credit card that includes flight delay insurance (true for most travel credit cards in both Canada and the US), you can often get hotel and meal costs reimbursed after a long enough delay, and that can still apply when the cause is weather or smoke. Thresholds and caps vary by card, so check your benefits guide once, before you need it.
 
 For more detail, see [the most important things to know before a disruption](https://flytrippers.com/most-important-things-related-to-canceled-and-delayed-flights/) and [what to do when the delay is already happening](https://flytrippers.com/6-things-to-do-when-your-flight-is-canceled-or-delayed/). The short version: always book your flights on a card with delay coverage, keep receipts, and do not assume the airline hotel voucher is your only option.
 
 Also check for a waiver before you pay to make changes to your booking. Waivers are temporary airline policies that drop change fees (and sometimes fare differences) so people can move off overloaded days. They are common in disruption weeks and easy to miss if you only look at the app’s change-fee quote.
 
-If your disruption is labor-related instead of smoke, the same check-your-booking habit applies. See [WestJet’s free change-or-cancel window](/news/westjet-free-change-cancel-cabin-crew-strike/) and the [easyJet France strike notice](/news/easyjet-france-cabin-crew-strike-notice/).
+The same check-your-booking habit showed up again later with [Northeast storm and ATC delays](/news/faa-northeast-ground-stops-atc-staffing/).
 
 ## Why delay insurance is worth caring about
 

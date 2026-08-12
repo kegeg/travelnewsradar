@@ -11,7 +11,7 @@ imageAlt: "WestJet aircraft on the tarmac (photo: David Syphers / Unsplash)"
 
 On **July 30th, 2026**, the union representing WestJet cabin crew served a **72-hour strike notice**. WestJet responded with a matching **lockout notice**. If there is no deal, a work stoppage could begin as early as **August 2nd at 00:01 Mountain Time**. Flights are still operating today, but WestJet says it is preparing a reduced schedule and may start changing or canceling trips before that deadline.
 
-This is the hard next step after [WestJet’s free change-or-cancel window for travel July 30th through August 4th](/news/westjet-free-change-cancel-cabin-crew-strike/). That flexibility is still live.
+This is the hard next step after [WestJet’s free change-or-cancel window for travel July 30th through August 4th](/news/westjet-free-change-cancel-cabin-crew-strike/). That flexibility is still live. After the stoppage, [recovery delays and cancellations](/news/westjet-flights-still-disrupted-after-cabin-crew-strike/) still hit trips while the network rebuilt.
 
 ## What changed today
 

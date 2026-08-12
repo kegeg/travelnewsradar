@@ -11,11 +11,11 @@ imageAlt: "Aircraft wing above the clouds on a clear day (photo: Ross Parmar / U
 
 Another Europe labor watch after [easyJet France’s summer strike notice](/news/easyjet-france-cabin-crew-strike-notice/). At Palma de Mallorca Airport (PMI), staff at **Swissport** are staging **partial strikes** on **July 28th, August 1st, August 4th, and August 8th, 2026**. Stoppages run **07:00–12:00** and **19:00–22:00** local time on each of those days.
 
-Swissport is a **ground-handling company**. [Aena](https://www.aena.es/en/airlines/operating-at-aena/commercial-and-operational-aspects/handling-and-self-assistance.html) runs Spanish airports and licenses handlers; Swissport is one of the firms airlines hire for check-in, boarding, bags, and ramp work. Only airlines that use Swissport at Palma sit in the direct line of fire. The airport stays open.
+Swissport is a **ground-handling company**. [Aena](https://www.aena.es/en/airlines/operating-at-aena/commercial-and-operational-aspects/handling-and-self-assistance.html) runs Spanish airports and licenses handlers; Swissport is one of the firms airlines hire for check-in, boarding, bags, and ramp work. Only airlines that use Swissport at Palma are directly affected. The airport stays open. Spain had a second ground-handling story the same stretch with an indefinite [Groundforce walkout at Barcelona-El Prat](/news/barcelona-el-prat-groundforce-strike/).
 
 PMI is already peak-summer busy, and Mallorca is in the path of totality for the **August 12th, 2026** total solar eclipse, which is pulling extra visitors into the island that week.
 
-## What is on, and what was called off
+## Strike dates and times
 
 [CCOO’s aviation section](https://aereo.fsc.ccoo.es/noticia:764899--CCOO_convoca_cuatro_jornadas_de_huelga_parcial_en_Swissport_Palma_para_reclamar_mejoras_en_prevencion_organizacion_y_condiciones_laborales&opc_id=85218c6354c7ad262b6b1b98e6713175) called the four partial strike days for Swissport’s Palma handling staff. Mediation at the Balearic arbitration tribunal (TAMIB) did not produce firm commitments, so those dates stayed on. Union demands focus on heat protection, staffing, work organization, and pay alignment with the sector handling agreement. CCOO puts Swissport Palma’s handling workforce around **600** people.
 
@@ -44,9 +44,8 @@ We are planning to go to Mallorca for that eclipse. We're flying Ryanair from So
 ## What to do now
 
 1. Confirm whether **your airline** uses Swissport at Palma, then match your dates to July 28th and August 1st, 4th, and 8th.
-2. If you are on a Swissport-handled carrier, prefer flights outside **07:00–12:00** and **19:00–22:00** local when you can, or leave extra time for bags.
-3. Travel light if your fare allows it. Bag systems usually feel ground-handling pressure first.
-4. Turn on airline alerts and check status before you leave for the airport on strike days.
+2. If you are on a Swissport-handled carrier, prefer flights outside **07:00–12:00** and **19:00–22:00** local when you can, or leave extra time for bags. Bag systems usually feel ground-handling pressure first.
+3. Turn on airline alerts and check status before you leave for the airport on strike days.
 
 ## Bottom line
 

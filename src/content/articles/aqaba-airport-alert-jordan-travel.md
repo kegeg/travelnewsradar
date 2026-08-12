@@ -4,7 +4,6 @@ description: "US Embassy Amman warned of a threat at Aqaba’s airport and seapo
 pubDate: 2026-07-19T20:30:00-04:00
 category: Advisories
 breaking: true
-locked: true
 image: "/images/articles/aqaba-balcony.jpg"
 imageAlt: "View over Aqaba from a balcony toward the Red Sea coast"
 ---
@@ -19,7 +18,7 @@ Aqaba is where a lot of Red Sea diving trips, Egypt ferries, and southern Jordan
 
 ## What this means for travelers
 
-If you are flying into or out of **King Hussein International Airport (AQJ)**, using the **Aqaba seaport**, or overnighting in Aqaba in the next few days, check multiple sources and decide with what you find. Sunday’s messages are not proof the airport is closed, and not proof the alert was meaningless.
+If you are flying into or out of **King Hussein International Airport (AQJ)**, using the **Aqaba seaport**, or overnighting in Aqaba in the next few days, check multiple sources and decide with what you find. Sunday’s conflicting messages do not settle whether the airport or port actually closed.
 
 Practical order of operations:
 
@@ -45,7 +44,7 @@ Keep the booking, monitor the airline, and re-check in the days before travel. A
 At this level of alert noise, things are very likely running. Still worth staying in touch with your dive shop or hotel so they know you have not canceled on them. Tourism businesses have been dealing with a lot of drop-offs, and a short message helps them plan. If you are especially anxious, ask what they are seeing on the ground, but do not assume everything is shut because of one contested alert.
 
 **Flexible dates:**  
-If your trip is optional and the alerts escalate beyond a contested one-day message, it can make sense to wait. What we can say from experience is in the section below, and that trip was before the July casualties, so still re-check today’s facts.
+If your trip is optional and the alerts escalate beyond a contested one-day message, it can make sense to wait. Our February–April trip notes follow; that stay was before the July casualties, so still re-check today’s facts.
 
 ## On the ground: what 5.5 weeks in Jordan looked like earlier this year
 

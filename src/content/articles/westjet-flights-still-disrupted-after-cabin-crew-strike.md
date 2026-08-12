@@ -11,7 +11,7 @@ imageAlt: "White passenger jet on an airport tarmac (photo: Bao Menglong / Unspl
 
 WestJet and CUPE reached a [tentative agreement on August 3rd, 2026](https://westjet.mediaroom.com/2026-08-03-WestJet-and-CUPE-reach-tentative-agreement,-ending-further-operational-disruption), ending the cabin crew work stoppage and withdrawing strike and lockout notices. Flights have started again, but WestJet says it is still rebuilding the network. Some trips can still be delayed or canceled while aircraft and crews are repositioned.
 
-This follows the [72-hour strike notice](/news/westjet-cabin-crew-72-hour-strike-notice/) and the earlier [free change-or-cancel window](/news/westjet-free-change-cancel-cabin-crew-strike/) while talks were still open. The strike itself is over. The schedule is not fully normal yet.
+This follows the [72-hour strike notice](/news/westjet-cabin-crew-72-hour-strike-notice/) and the earlier [free change-or-cancel window](/news/westjet-free-change-cancel-cabin-crew-strike/) while talks were still open. The strike is over, but the schedule is not fully normal yet. CUPE later shared more of [what’s in the tentative deal](/news/westjet-cabin-crew-deal-wage-hike-duty-premium/), including wage and duty-premium terms still waiting on ratification.
 
 ## What WestJet is saying now
 

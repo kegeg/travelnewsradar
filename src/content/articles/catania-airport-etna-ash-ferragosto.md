@@ -27,9 +27,9 @@ Airlines have been diverting some Catania traffic to other Sicilian airports dur
 
 Volcanic ash is bad for jet engines and for visibility. Controllers close the sectors under the cloud, and airports stop landings (and sometimes takeoffs) until the air and runway are safe again.
 
-Italy’s National Institute of Geophysics and Volcanology (INGV) Etna Observatory raised the [Volcano Observatory Notice for Aviation (VONA) color code to red](https://www.ct.ingv.it/Dati/informative/vona/VONA_Etna_202608091419Z_2026008406E05.pdf) on **August 9th, 2026**, citing strong explosive activity at the summit craters, lava flows in Valle del Leone and Valle del Bove, and ash moving south / southeast. The Toulouse Volcanic Ash Advisory Center still had Etna at [aviation colour code red](https://vaac.meteo.fr/advisory/2026/211060_20260811100003/211060_20260811100003_vaa.txt) on **August 11th**, with observed ash from the surface up to about flight level 160 (roughly **4.9 km / 16,000 ft**) drifting southwest, with the highest concentration near the volcano.
+Italy’s National Institute of Geophysics and Volcanology (INGV) Etna Observatory raised the [Volcano Observatory Notice for Aviation (VONA) color code to red](https://www.ct.ingv.it/Dati/informative/vona/VONA_Etna_202608091419Z_2026008406E05.pdf) on **August 9th, 2026**, citing strong explosive activity at the summit craters, lava flows in Valle del Leone and Valle del Bove, and ash moving south / southeast. The Toulouse Volcanic Ash Advisory Center still had Etna at [aviation color code red](https://vaac.meteo.fr/advisory/2026/211060_20260811100003/211060_20260811100003_vaa.txt) on **August 11th**, with observed ash from the surface up to about flight level 160 (roughly **4.9 km / 16,000 ft**) drifting southwest, with the highest concentration near the volcano.
 
-Local INGV updates through this episode have focused on intense explosive activity at the **Voragine** crater and ongoing lava activity on Etna’s eastern flank. The aviation colour code can stay red even while SAC toggles airport windows hour by hour.
+Local INGV updates through this episode have focused on intense explosive activity at the **Voragine** crater and ongoing lava activity on Etna’s eastern flank. The aviation color code can stay red even while SAC toggles airport windows hour by hour.
 
 ## What this means for travelers
 

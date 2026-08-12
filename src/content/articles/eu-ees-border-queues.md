@@ -11,7 +11,7 @@ imageAlt: "Aircraft landing at a European airport with mountains in the backgrou
 
 Europe’s [Entry/Exit System (EES)](https://travel-europe.europa.eu/ees_en) has been [fully operational](https://home-affairs.ec.europa.eu/news/entryexit-system-ees-fully-operational-2026-04-10_en) across Schengen external borders since **April 10th, 2026**. For most US and Canadian leisure travelers on a short stay, that means fingerprints, a facial image, and a digital entry record on your first arrival instead of a passport stamp. At busy hubs this summer, that extra step is stacking into long border queues. The separate online pre-travel system, [ETIAS](https://travel-europe.europa.eu/etias_en), is still not collecting applications.
 
-Another Europe summer watch item beside [Palma Swissport partial strikes](/news/palma-airport-swissport-strikes/) and the [easyJet France cabin-crew strike notice](/news/easyjet-france-cabin-crew-strike-notice/).
+Italy also has temporary [air and sea border checks on arrivals from Spain](/news/italy-spain-schengen-border-checks/) this August. EES is an **external** Schengen border system. Italy’s Spain checks are an **internal** control on a specific route set.
 
 ## What EES actually does
 
@@ -33,7 +33,7 @@ Border posts can temporarily pause **biometric** collection when waits get extre
 
 I flew into **Sofia Airport** on **June 9th, 2026**, after EES was already fully live. I cleared with an officer: fingerprints, photo, the usual questions. The wait was about **10 to 15 minutes**, and it was basically just our flight in the hall at that moment. It felt quick and efficient.
 
-My girlfriend holds an Italian passport, so she used the EU e-gates and was through in seconds while I did the third-country process. I’m staying inside Schengen for the rest of this stretch and flying out of **Barcelona in mid-August**, so I will not hit EES enrollment again until that exit.
+Caroline, my girlfriend, holds an Italian passport, so she used the EU e-gates and was through in seconds while I did the third-country process. I’m staying inside Schengen for the rest of this stretch and flying out of **Barcelona in mid-August**, so I will not hit EES enrollment again until that exit.
 
 ## ETIAS is still not live (and keeps slipping)
 

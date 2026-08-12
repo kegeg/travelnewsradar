@@ -11,7 +11,7 @@ imageAlt: "WestJet aircraft on the tarmac (photo: David Syphers / Unsplash)"
 
 WestJet has posted a [potential labor disruption advisory](https://www.westjet.com/en-ca/get-travel-ready/advisories) for guests traveling **July 30th through August 4th, 2026**, with a one-time change or cancellation and **no change/cancel fee**. The window sits on top of a strong cabin-crew strike mandate: CUPE Local 8125 says flight attendants could legally walk out as early as **August 2nd** if talks fail. A strike is not automatic.
 
-Europe has a parallel watch item this week: [easyJet France cabin crew filed a summer strike notice](/news/easyjet-france-cabin-crew-strike-notice/) with no firm walkout dates yet.
+That window later led into CUPE’s [72-hour strike notice](/news/westjet-cabin-crew-72-hour-strike-notice/) and WestJet’s matching lockout notice. Europe had a parallel story the same week: [easyJet France cabin crew filed a summer strike notice](/news/easyjet-france-cabin-crew-strike-notice/) with no firm walkout dates yet.
 
 ## What WestJet is offering to travelers
 
@@ -52,7 +52,7 @@ Do not assume “no fee” means “full cash refund.” UltraBasic and many che
 1. Confirm your departure sits in the July 30th–August 4th window.
 2. Prefer changing or canceling in [Manage Trips](https://www.westjet.com/en-ca/manage) if you booked direct; call the vacation or third-party seller if you did not.
 3. If you rebook, check whether you are only shifting dates (fare difference often waived) or changing destination/cabin/fare type (difference usually still due).
-4. Watch WestJet’s [advisories](https://www.westjet.com/en-ca/get-travel-ready/advisories) and your reservation email into early August. A deal can still land. A 72-hour strike notice would be the hard signal to treat the schedule as at risk.
+4. Watch WestJet’s [advisories](https://www.westjet.com/en-ca/get-travel-ready/advisories) and your reservation email into early August. A deal can still land. A [72-hour strike notice](/news/westjet-cabin-crew-72-hour-strike-notice/) puts the schedule at risk.
 
 ## Bottom line
 

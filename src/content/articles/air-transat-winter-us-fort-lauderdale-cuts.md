@@ -21,7 +21,7 @@ On **April 17th, 2026**, [Air Transat’s winter program announcement](https://t
 | Halifax (YHZ)–Fort Lauderdale (FLL) | **1** weekly from **December 16th, 2026** | **Canceled** |
 | Quebec City (YQB)–Fort Lauderdale (FLL) | **3** weekly from mid-November 2026 | Still planned, **3** weekly from **December 15th, 2026** |
 
-Industry schedule trackers published the filing update on **July 21st, 2026**. Air Transat has not posted a matching media release explaining the change. Treat the filings as the working timetable until the airline updates booking tools or publishes a correction.
+Industry schedule trackers published the filing update on **July 21st, 2026**. Air Transat has not posted a matching media release explaining the change. The filings are the working timetable until the airline updates booking tools or publishes a correction.
 
 ## Why a thinner US schedule fits the Canada-US travel picture
 

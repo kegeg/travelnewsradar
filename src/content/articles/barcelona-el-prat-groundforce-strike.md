@@ -45,9 +45,9 @@ Other handlers cover other airlines at the same airport. Aena currently lists **
 
 ## What this means for travelers
 
-If you fly a Groundforce-handled airline at BCN after August 4th, leave buffer for bags and boarding. If you are still booking a trip with a tight same-day connection through El Prat, leave more buffer when you can. Bag systems usually feel ground-handling pressure first.
+If you fly a Groundforce-handled airline at BCN after August 4th, leave buffer for bags and boarding. If you are still booking a trip with a tight same-day connection through El Prat, build that buffer into the itinerary while you can. Bag systems usually feel ground-handling pressure first.
 
-If your airline uses another handler, this strike does not put your carrier in the direct line of fire. Still watch day-of status in peak August, and confirm your handler assignment for your exact flights.
+If your airline uses another handler, that carrier is not directly affected by this strike. Still watch day-of status in peak August, and confirm your handler assignment for your exact flights.
 
 I’ll be through El Prat mid-August after Mallorca. I’m flying into Barcelona from Palma on Air Europa, which is on Groundforce, but I have a full night there if something slips. My American Airlines long-haul out uses Menzies, not Groundforce. Still watching day-of status while the airport is under this pressure.
 
@@ -56,7 +56,7 @@ I’ll be through El Prat mid-August after Mallorca. I’m flying into Barcelona
 1. Check whether **your airline** is on Groundforce at Barcelona, then match that to travel from August 4th onward. Confirm the exact flight with the airline, since Aena’s page is a baggage-services list that can change.
 2. Complete online check-in when offered, and prefer cabin bags if your fare allows it.
 3. Turn on airline alerts and check flight status before you leave for the airport.
-4. If you have a tight same-day connection and can adjust it cheaply, you could change it to leave more buffer if you want extra time.
+4. If you have a tight same-day connection and can adjust it cheaply, you could change it if you want extra time.
 5. If your flight is delayed or canceled, use the airline’s care, rebooking, and refund path first. Ask what care and rerouting they will provide for your exact disruption; do not assume a cash payout.
 
 ## Bottom line

@@ -21,7 +21,7 @@ Staffing constraints were part of the afternoon picture. Later reports summarizi
 
 ## What this means for travelers
 
-If you flew, connected, or were supposed to fly through the Northeast on August 6th through 8th, treat the next couple of days as recovery time even when the status board looks quiet. Aircraft and crews get out of position after a storm day. Missed connections and late aircraft can linger after the sky clears.
+If you flew, connected, or were supposed to fly through the Northeast on August 6th through 8th, expect disruption to linger for a couple of days even when the status board looks quiet. Aircraft and crews get out of position after a storm day. Missed connections and late aircraft can linger after the sky clears.
 
 If you are still booking or still deciding whether to move a trip, a quieter NAS board helps, but some itineraries can still be a mess. Check **your flight** first.
 
@@ -52,7 +52,7 @@ For US itineraries, weather and ATC restrictions generally do not trigger a stan
 
 This week’s storm was acute. New York-area controller staffing is a longer background problem. The FAA has kept [limited staffing-related relief from minimum slot-usage rules](https://www.govinfo.gov/content/pkg/FR-2025-07-25/html/2025-14100.htm) at JFK, LaGuardia, and Reagan National through the summer 2026 season (through October 24th, 2026). That waiver lets airlines temporarily return a share of slots without the usual use-or-lose risk, which is meant to ease pressure while the New York TRACON (N90) works through certified-controller shortfalls.
 
-For travelers, that background does not create a same-day rebooking right by itself. It does help explain why Northeast thunderstorm days can cascade faster than a clear-weather day in a less constrained piece of airspace.
+For travelers, that background helps explain why Northeast thunderstorm days can cascade faster than a clear-weather day in less constrained airspace, though it is not a same-day rebooking right on its own.
 
 ## Bottom line
 
