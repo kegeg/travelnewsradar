@@ -48,7 +48,10 @@ for (const category of primaryOrder) {
   if (items.length === 0) continue;
   sections.push({
     title: category,
-    seeMoreHref: `/category/${categorySlug(category)}/`,
+    seeMoreHref:
+      publishedCountByCategory[category] >= 5
+        ? `/category/${categorySlug(category)}/`
+        : null,
     articles: items,
   });
 }
@@ -62,7 +65,10 @@ for (const category of thinCategories) {
     if (items.length === 0) continue;
     sections.push({
       title: category,
-      seeMoreHref: `/category/${categorySlug(category)}/`,
+      seeMoreHref:
+        publishedCountByCategory[category] >= 5
+          ? `/category/${categorySlug(category)}/`
+          : null,
       articles: items,
     });
   } else {
@@ -106,19 +112,19 @@ if (othersPool.length > 0) {
         )}
         {sections.map((section) => (
           <section class="home-category">
-            <h2 class="home-category__title">{section.title}</h2>
+            <div class="home-category__head">
+              <h2 class="home-category__title">{section.title}</h2>
+              {section.seeMoreHref && (
+                <a class="home-category__more" href={section.seeMoreHref}>
+                  See more
+                </a>
+              )}
+            </div>
             <ol class="story-list story-list--row4">
               {section.articles.map((article) => (
                 <StoryCard article={article} variant="compact" />
               ))}
             </ol>
-            {section.seeMoreHref && (
-              <p class="home-category__more-wrap">
-                <a class="home-category__more" href={section.seeMoreHref}>
-                  See more
-                </a>
-              </p>
-            )}
           </section>
         ))}
       </div>
