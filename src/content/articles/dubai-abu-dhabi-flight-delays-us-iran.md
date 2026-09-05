@@ -1,7 +1,7 @@
 ---
 title: "Dubai and Abu Dhabi flights delayed after US-Iran strike exchange"
 description: "DXB and AUH are open but running late on September 2 after overnight US-Iran strikes. Check Emirates, Etihad, and your airline app before you leave for the airport."
-pubDate: 2026-09-02T09:37:29-04:00
+pubDate: 2026-09-05T09:15:21-04:00
 category: Flights
 breaking: true
 draft: false
